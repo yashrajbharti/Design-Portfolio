@@ -194,7 +194,7 @@ h2.projects {
 @media screen and (orientation: portrait) and (width< 768px) {
     #projects article {
         background-color: #eff4f2;
-        padding: 25px;
+        padding: 40px 25px;
         border-radius: 16px;
         text-align: center;
     }
