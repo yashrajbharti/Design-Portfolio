@@ -79,9 +79,7 @@ h1 {
     opacity: 0;
 }
 
-.braille:hover::after {
-    opacity: 1;
-}
+
 
 @media screen and (pointer: fine) {
     .braille.clipper::after {
@@ -89,6 +87,10 @@ h1 {
         -webkit-clip-path: circle(63px at var(--xo) var(--yo));
         -moz-clip-path: circle(63px at var(--xo) var(--yo));
         -o-clip-path: circle(63px at var(--xo) var(--yo));
+    }
+
+    .braille:hover::after {
+        opacity: 1;
     }
 }
 
