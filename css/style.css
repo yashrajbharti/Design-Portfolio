@@ -54,9 +54,26 @@ h1 {
     font-size: clamp(32px, calc(3vw + 15px), 64px);
 }
 
-main img {
+.braille,
+.braille img {
     width: 100%;
     max-width: 550px;
     margin-inline: auto;
     mix-blend-mode: multiply;
+    position: relative;
+}
+
+.braille::after {
+    position: absolute;
+    font-size: 36px;
+    width: 100px;
+    content: "Accessible solutions build for everyone";
+    inset-inline-start: 40%;
+    inset-block-start: 50%;
+    translate: -50% -50%;
+    z-index: 5;
+}
+
+.brand {
+    color: #557FFE;
 }
