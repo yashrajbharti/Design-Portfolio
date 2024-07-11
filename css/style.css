@@ -191,7 +191,7 @@ h2.projects {
     inset-inline-start: 0;
 }
 
-@media screen and (orientation: portrait) and (width< 768px) {
+@media screen and (width< 900px) {
     #projects article {
         background-color: #eff4f2;
         padding: 40px 25px;
