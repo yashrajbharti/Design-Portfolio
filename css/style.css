@@ -145,7 +145,7 @@ h2#main {
     gap: 20px;
 }
 
-.cards article {
+.cards a article {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -154,4 +154,8 @@ h2#main {
     padding: 15px;
     border-radius: 20px;
     background-color: #dfe3e7;
+}
+
+.cards a {
+    color: #0e1012;
 }
