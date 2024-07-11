@@ -12,6 +12,7 @@ html {
 
 body {
     background-color: #fafffd;
+    color: #0e1012;
 }
 
 .geologica {
@@ -66,7 +67,7 @@ h1 {
 .braille::after {
     position: absolute;
     font-size: 36px;
-    width: 100px;
+    width: 150px;
     content: "Accessible solutions build for everyone";
     inset-inline-start: 40%;
     inset-block-start: 50%;
@@ -75,5 +76,12 @@ h1 {
 }
 
 .brand {
-    color: #557FFE;
+    color: #4c72e6;
+}
+
+.logo {
+    position: absolute;
+    inset-inline-start: 0;
+    inset-block-start: 0;
+    margin: 30px;
 }
