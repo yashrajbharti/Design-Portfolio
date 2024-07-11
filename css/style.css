@@ -94,6 +94,18 @@ h1 {
     }
 }
 
+@media screen and (pointer: coarse) {
+    .braille:hover::after {
+        transition: opacity 0.5s ease;
+        opacity: 1;
+    }
+
+    .braille:hover img {
+        transition: opacity 0.5s ease;
+        opacity: 0.2;
+    }
+}
+
 a {
     color: #4c72e6;
     text-decoration: none;
