@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #fafffd;
+}
+
+.geologica {
+    font-family: "Geologica", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+        "slnt" 0,
+        "CRSV" 0,
+        "SHRP" 0;
+}
+
+.skip {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.skip:focus {
+    position: static;
+    width: auto;
+    height: auto;
+}
+
+main {
+    block-size: 100vh;
+    inline-size: 100vw;
+    margin-inline: auto;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: clamp(32px, calc(3vw + 15px), 64px);
+}
+
+main img {
+    width: 100%;
+    max-width: 550px;
+    margin-inline: auto;
+    mix-blend-mode: multiply;
+}
