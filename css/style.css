@@ -62,6 +62,7 @@ h1 {
     margin-inline: auto;
     mix-blend-mode: multiply;
     position: relative;
+    transition: opacity 0.5s ease;
 }
 
 .braille::after {
@@ -76,6 +77,7 @@ h1 {
     z-index: 5;
     background-color: #fafffd;
     padding: 30px;
+    transition: opacity 0.5s ease;
     opacity: 0;
 }
 
@@ -96,12 +98,11 @@ h1 {
 
 @media screen and (pointer: coarse) {
     .braille:hover::after {
-        transition: opacity 0.5s ease;
+        background-color: transparent;
         opacity: 1;
     }
 
     .braille:hover img {
-        transition: opacity 0.5s ease;
         opacity: 0.2;
     }
 }
@@ -120,4 +121,14 @@ a {
     inset-inline-start: 0;
     inset-block-start: 0;
     margin: 30px;
+}
+
+section {
+    padding: 40px;
+}
+
+h2#main {
+    font-size: 14px;
+    font-weight: 300;
+    color: #242a2f;
 }
