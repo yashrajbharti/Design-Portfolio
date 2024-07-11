@@ -44,7 +44,6 @@ body {
 
 main {
     block-size: 100vh;
-    /* inline-size: 100vw; */
     margin-inline: auto;
     padding: 40px;
     display: grid;
@@ -180,7 +179,28 @@ h2.projects {
     gap: 15px;
 }
 
+#projects article h2 {
+    text-align: center;
+}
+
 #projects article img {
     border-radius: 10px;
     max-inline-size: 100%;
+}
+
+.web,
+.mobile {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.web {
+    background-color: #4c72e625;
+    margin: 5px 0;
+}
+
+.mobile {
+    background-color: #a239ee2f;
+    margin: 5px;
 }
