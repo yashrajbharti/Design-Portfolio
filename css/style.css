@@ -196,6 +196,11 @@ h2.projects {
         background-color: #eff4f2;
         padding: 25px;
         border-radius: 8px;
+        text-align: center;
+    }
+
+    #projects article img {
+        margin-inline: auto;
     }
 }
 
