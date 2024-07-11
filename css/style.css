@@ -87,6 +87,11 @@ h1 {
     opacity: 1;
 }
 
+a {
+    color: #4c72e6;
+    text-decoration: none;
+}
+
 .brand {
     color: #4c72e6;
 }
