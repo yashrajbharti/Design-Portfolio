@@ -1,8 +1,10 @@
+import { animateJS } from "./animate.mjs";
+
 export const observerJS = () => {
   const handleIntersection = (entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        console.log(entry.target.getAttribute("data-label"));
+        animateJS(entry.target.getAttribute("data-label"));
       }
     });
   };

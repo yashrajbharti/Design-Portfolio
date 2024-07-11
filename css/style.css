@@ -292,3 +292,14 @@ footer div a:hover {
 .button:hover::after {
     transform: scaleX(1);
 }
+
+article[data-label] img {
+    opacity: 0;
+    translate: 0 30px;
+    transition: opacity 0.6s ease, translate 0.6s ease;
+}
+
+article[data-label].animate img {
+    translate: 0 -30px;
+    opacity: 1;
+}
