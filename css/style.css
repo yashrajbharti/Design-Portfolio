@@ -83,11 +83,13 @@ h1 {
     opacity: 1;
 }
 
-.braille.clipper::after {
-    clip-path: circle(63px at var(--xo) var(--yo));
-    -webkit-clip-path: circle(63px at var(--xo) var(--yo));
-    -moz-clip-path: circle(63px at var(--xo) var(--yo));
-    -o-clip-path: circle(63px at var(--xo) var(--yo));
+@media screen and (pointer: fine) {
+    .braille.clipper::after {
+        clip-path: circle(63px at var(--xo) var(--yo));
+        -webkit-clip-path: circle(63px at var(--xo) var(--yo));
+        -moz-clip-path: circle(63px at var(--xo) var(--yo));
+        -o-clip-path: circle(63px at var(--xo) var(--yo));
+    }
 }
 
 a {
