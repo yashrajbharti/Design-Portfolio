@@ -62,12 +62,10 @@ h1 {
     margin-inline: auto;
     mix-blend-mode: multiply;
     position: relative;
-    transition: opacity 0.8s ease;
 }
 
 .braille::after {
     position: absolute;
-    opacity: 0;
     font-size: 36px;
     width: 150px;
     content: "Accessible solutions build for everyone";
@@ -76,15 +74,20 @@ h1 {
     inset-block-start: 50%;
     translate: -50% -50%;
     z-index: 5;
-    transition: opacity 0.8s ease;
-}
-
-.braille:hover img {
-    opacity: 0.2;
+    background-color: #fafffd;
+    padding: 30px;
+    opacity: 0;
 }
 
 .braille:hover::after {
     opacity: 1;
+}
+
+.braille.clipper::after {
+    clip-path: circle(63px at var(--xo) var(--yo));
+    -webkit-clip-path: circle(63px at var(--xo) var(--yo));
+    -moz-clip-path: circle(63px at var(--xo) var(--yo));
+    -o-clip-path: circle(63px at var(--xo) var(--yo));
 }
 
 a {
