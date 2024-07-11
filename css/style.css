@@ -13,6 +13,8 @@ html {
 body {
     background-color: #fafffd;
     color: #0e1012;
+    max-inline-size: 1440px;
+    margin-inline: auto;
 }
 
 .geologica {
@@ -42,7 +44,7 @@ body {
 
 main {
     block-size: 100vh;
-    inline-size: 100vw;
+    /* inline-size: 100vw; */
     margin-inline: auto;
     padding: 40px;
     display: grid;
@@ -175,6 +177,7 @@ h2.projects {
     align-items: center;
     justify-content: center;
     margin-block-start: 30px;
+    gap: 15px;
 }
 
 #projects article img {
