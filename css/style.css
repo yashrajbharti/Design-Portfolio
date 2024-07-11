@@ -303,3 +303,16 @@ article[data-label].animate img {
     translate: 0 0;
     opacity: 1;
 }
+
+@media screen and (prefers-reduced-motion) {
+    article[data-label] img {
+        opacity: 1;
+        translate: 0 0;
+        transition: unset;
+    }
+
+    article[data-label].animate img {
+        translate: 0 0;
+        opacity: 1;
+    }
+}
