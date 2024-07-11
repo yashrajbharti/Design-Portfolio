@@ -236,6 +236,20 @@ footer {
     margin-block-start: 20px;
     padding-block-start: 20px;
     text-align: center;
+    margin-block-end: 15px;
+    opacity: 0.6;
 }
 
-footer div {}
+footer div {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-block-end: 10px;
+}
+
+footer div a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #0e1012;
+}
