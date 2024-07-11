@@ -154,8 +154,13 @@ h2#main {
     padding: 15px;
     border-radius: 20px;
     background-color: #dfe3e7;
+    transition: background-color 0.3s ease;
 }
 
 .cards a {
     color: #0e1012;
+}
+
+.cards a:hover article {
+    background-color: #e9ecef;
 }
