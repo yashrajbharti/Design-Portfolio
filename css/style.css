@@ -195,7 +195,7 @@ h2.projects {
     #projects article {
         background-color: #eff4f2;
         padding: 25px;
-        border-radius: 8px;
+        border-radius: 16px;
         text-align: center;
     }
 
@@ -230,3 +230,12 @@ h2.projects {
     background-color: #a239ee2f;
     margin: 5px;
 }
+
+footer {
+    border-block-start: 1px solid #e4e4e4;
+    margin-block-start: 20px;
+    padding-block-start: 20px;
+    text-align: center;
+}
+
+footer div {}
