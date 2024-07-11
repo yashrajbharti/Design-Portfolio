@@ -250,10 +250,15 @@ footer div a {
     display: flex;
     align-items: center;
     gap: 5px;
+    transition: opacity 0.3s ease;
     color: #0e1012;
 }
 
 footer div a,
 footer span {
     opacity: 0.6;
+}
+
+footer div a:hover {
+    opacity: 1;
 }
