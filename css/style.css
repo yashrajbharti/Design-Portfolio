@@ -42,7 +42,7 @@ body {
     height: auto;
 }
 
-main {
+main.hero {
     block-size: 100vh;
     margin-inline: auto;
     padding: 40px;
