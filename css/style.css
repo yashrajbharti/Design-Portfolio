@@ -215,7 +215,8 @@ h2.projects {
 }
 
 .web,
-.mobile {
+.mobile,
+.graphic {
     display: inline-block;
     padding: 5px 10px;
     border-radius: 8px;
@@ -223,6 +224,11 @@ h2.projects {
 
 .web {
     background-color: #4c72e625;
+    margin: 5px 0;
+}
+
+.graphic {
+    background-color: #e6e66d8f;
     margin: 5px 0;
 }
 
