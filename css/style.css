@@ -171,12 +171,30 @@ h2.projects {
 }
 
 #projects article {
+    position: relative;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     align-items: center;
     justify-content: center;
     margin-block-start: 30px;
     gap: 15px;
+}
+
+#projects article::before {
+    position: absolute;
+    content: "";
+    background-color: #eff4f2;
+    width: calc(100vw - 80px);
+    height: 200px;
+    z-index: -1;
+    border-radius: 15px;
+    inset-inline-start: 0;
+}
+
+@media screen and (orientation: portrait) and (width< 768px) {
+    #projects article {
+        background-color: #eff4f2;
+    }
 }
 
 #projects article h2 {
