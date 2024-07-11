@@ -263,11 +263,32 @@ footer div a:hover {
     opacity: 1;
 }
 
-button {
+.button {
+    position: relative;
+    display: block;
     background-color: transparent;
     border: none;
     color: #0e1012;
     font-size: 20px;
     padding: 10px;
     border-radius: 10px;
+    inline-size: 100%;
+    text-align: center;
+}
+
+.button::after {
+    content: '';
+    position: absolute;
+    width: 6ch;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 1px;
+    left: calc(50% - 3ch);
+    background-color: #4c72e6;
+    transform-origin: bottom left;
+    transition: transform 0.6s ease-out;
+}
+
+.button:hover::after {
+    transform: scaleX(1);
 }
