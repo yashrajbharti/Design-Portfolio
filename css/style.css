@@ -299,25 +299,25 @@ footer div a:hover {
     transform: scaleX(1);
 }
 
-article[data-label] img {
+[data-label] img {
     opacity: 0;
     translate: 0 45px;
     transition: opacity 0.6s ease, translate 0.6s ease;
 }
 
-article[data-label].animate img {
+[data-label].animate img {
     translate: 0 0;
     opacity: 1;
 }
 
 @media screen and (prefers-reduced-motion) {
-    article[data-label] img {
+    [data-label] img {
         opacity: 1;
         translate: 0 0;
         transition: unset;
     }
 
-    article[data-label].animate img {
+    [data-label].animate img {
         translate: 0 0;
         opacity: 1;
     }
