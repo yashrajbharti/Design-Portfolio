@@ -1,0 +1,48 @@
+section {
+    text-align: start;
+}
+
+.projects {
+    text-align: start;
+}
+
+img {
+    display: block;
+    text-align: center;
+    margin-inline: auto;
+}
+
+section img:last-of-type {
+    max-inline-size: 500px;
+    inline-size: 100%;
+    border-radius: 8px;
+}
+
+iframe {
+    margin-block-start: 20px;
+    max-inline-size: 750px;
+    block-size: 400px;
+    inline-size: 100%;
+    border-radius: 8px;
+}
+
+main {
+    text-align: center;
+    padding: 40px;
+    block-size: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+main h1,
+main h2 {
+    text-align: start;
+}
+
+.projects {
+    margin-block-start: 40px;
+    margin-block-end: 20px;
+}
