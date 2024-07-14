@@ -1,10 +1,10 @@
 const online = document.querySelector(".online");
 const offline = document.querySelector(".offline");
-document.addEventListener("offline", () => {
+window.addEventListener("offline", () => {
   offline.style.display = "flex";
   online.style.display = "none";
 });
-document.addEventListener("online", () => {
+window.addEventListener("online", () => {
   offline.style.display = "none";
   online.style.display = "flex";
   setTimeout(() => {

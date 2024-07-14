@@ -17,6 +17,7 @@ h1 {
 h1 img {
     display: block;
     margin-inline: auto;
+    margin-block-end: 10px;
 }
 
 section p,
@@ -113,6 +114,8 @@ div.content a {
     translate: -50% 0;
     padding: 20px;
     margin: 20px;
+    inline-size: max-content;
+    max-inline-size: 100%;
     background-color: #e9ecef;
     border-radius: 8px;
 }
