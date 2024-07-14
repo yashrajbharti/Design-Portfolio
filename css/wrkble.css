@@ -18,3 +18,88 @@ h1 img {
     display: block;
     margin-inline: auto;
 }
+
+section p,
+section ul {
+    max-inline-size: 800px;
+    margin-inline: auto;
+}
+
+h2.projects {
+    margin-block-start: 30px;
+    margin-block-end: 20px;
+}
+
+section>img {
+    display: block;
+    max-inline-size: 800px;
+    inline-size: 100%;
+    margin-inline: auto;
+    text-align: center;
+    mix-blend-mode: multiply;
+}
+
+img.small {
+    max-inline-size: 500px;
+}
+
+.border {
+    border-radius: 8px;
+    border: 2px solid #e2e2e2;
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    inline-size: 90%;
+    margin-inline: auto;
+}
+
+.grid img {
+    cursor: pointer;
+    border-radius: 8px;
+    border: 4px solid #e2e2e2;
+}
+
+.pdf {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    background-color: #e9ecef;
+    max-inline-size: max-content;
+    margin-inline: auto;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.pdf p {
+    color: #3b5ec7;
+}
+
+
+.content {
+    inline-size: 100%;
+    max-inline-size: 700px;
+    margin-inline: auto;
+    padding: 50px;
+    padding-block-start: 25px;
+    background-color: #e9ecef;
+    border-radius: 20px;
+}
+
+.content h3 {
+    margin-block-start: 20px;
+}
+
+ul {
+    margin-inline-start: 1rem;
+}
+
+div.content a {
+    color: #0e1012;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
