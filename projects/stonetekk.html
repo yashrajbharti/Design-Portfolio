@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Portfolio | StoneTEKK</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/stonetekk.css">
+    <link rel="stylesheet" href="../css/modal.css">
+    <link rel="shortcut icon" href="../images/Hero/yash.svg" type="image/x-icon">
+    <meta name="description" content="Design portfolio showcasing the projects I led as a UX lead">
+</head>
+
+<body class="geologica">
+    <header>
+        <a href="#main" class="skip">Skip to main content</a>
+    </header>
+    <main>
+        <a href="/Design-Portfolio"><img class="logo" src="../images/Hero/yash.svg" alt="yash logo" width="65px"></a>
+        <h1>
+            <img src="../images/Stonetekk/logo.svg" alt="StoneTEKK logo" height="100px" width="auto">
+            <span class="brand">StoneTEKK</span>: Stone Industry Management System
+        </h1>
+    </main>
+    <section>
+        <h2 id="main" class="projects">- idea -</h2>
+        <p>The stone industry is traditionally disorganized, and our goal is to modernize it. Stone is a natural
+            material that is cut into slabs, with pieces in batches arranged so one end of a stone seamlessly aligns
+            with the next. We developed a real-time inventory management system for this process. If a stone gets
+            broken, no problem—our system includes an easy-to-use UI for entering the value of chipped corners, allowing
+            users to see the cut stone and automatically adjust the price (by finding the largest rectangle).
+            Additionally, we provided an e-commerce solution for purchasing stone for house flooring online. Lastly, our
+            AR experience lets users see how the stone looks in 3D on walls or floors.</p>
+        <h2 class="projects">- pitch -</h2>
+        <img loading="lazy" class="img" src="../images/Stonetekk/UI.png" alt="StoneTEKK UI">
+        <br>
+        <a class="pdf" href="https://www.stonetekk.in/images/Pitch/StoneTEKK%20-%20Intro.pdf" target="_blank">
+            <img src="../images/Icons/Pdf.svg" alt="Pdf for usability report" height="40px">
+            <p>Pitch for Stone Industry Management app</p>
+        </a>
+        <br>
+        <h2 id="main" class="projects">- colors and typography -</h2>
+        <img loading="lazy" class="img small border" src="../images/Stonetekk/Colors.png" alt="Colors used in design">
+        <br>
+        <img loading="lazy" class="img small border" src="../images/Stonetekk/Typography.png"
+            alt="StoneTEKK Typography">
+        <h2 id="main" class="projects">- cards and components -</h2>
+        <img loading="lazy" class="img  border" src="../images/Stonetekk/Component.png" alt="Design components">
+        <h2 id="main" class="projects">- Case Study: zeigarneik effect -</h2>
+        <p class="content">In our research and testing, we found that users preferred having an indication of the number
+            of steps
+            required to order a stone. We implemented a step-by-step guide showing the stages: adding to cart, adding
+            address, adding payment, and swiping to pay, labeled as 1, 2, 3, 4. Upon completing the process, we added a
+            celebration confetti animation for a successful order. This feature was well-received and loved by users.
+            <br><br>
+            The <b>Zeigarnik Effect</b>, a psychological phenomenon where people remember uncompleted or interrupted
+            tasks
+            better than completed ones, can be leveraged in UX design to enhance user engagement and completion rates.
+            By showing users the steps required to complete their order, we tap into the Zeigarnik Effect, keeping them
+            motivated to continue through each step until completion. If a person leaves the process mid-way, they are
+            constantly reminded of their incomplete steps when they return to browse more stones, driving their desire
+            to complete the task. The visual progress indicators and the final celebration confetti act as incentives,
+            reducing the likelihood of task abandonment and ensuring a more satisfying user experience.
+            <br> <br>This strategic
+            use of the Zeigarnik Effect in our design directly contributed to the positive feedback and increased user
+            satisfaction in our case study. Users particularly loved the <b>gamification</b> aspect, where the confetti
+            celebration provided a rewarding sense of achievement upon completing their purchase.
+        </p>
+        <br>
+        <img loading="lazy" class="img border" src="../images/Stonetekk/steps.png" alt="steps to order stone">
+        <h2 id="main" class="projects">- calculator for stone defects -</h2>
+        <p class="center">An innovative UX backed by Robust algorithms to solve client needs.</p>
+        <br>
+        <img loading="lazy" class="img small border" src="../images/Stonetekk/Defect.png"
+            alt="Stone defects price calculator">
+        <a href="https://www.stonetekk.in/defect" class="button" target="_blank">View ↗</a>
+        <h2 id="main" class="projects">- prototype -</h2>
+        <img loading="lazy" class="img border" src="../images/Stonetekk/Prototype.png" alt="Design prototype">
+        <h2 id="main" class="projects">- design overview & web -</h2>
+        <img loading="lazy" class="img border" src="../images/Stonetekk/Design Mobile.png" alt="Design overview mobile">
+        <img loading="lazy" class="img border" src="../images/Stonetekk/Design Overview.png"
+            alt="Design overview desktop">
+        <br>
+        <a href="https://www.stonetekk.in/#home" class="button" target="_blank">View ↗</a>
+
+        <h2 id="main" class="projects">- design -</h2>
+        <div class="grid">
+            <img class="border" loading="lazy" src="../images/ARtekk/Collections.png" alt="Collections" width="100%">
+
+        </div>
+    </section>
+    <div id="parent-modal" class="modal">
+        <button class="close" onclick="closeModal()">&times;</button>
+        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+        <div class="counter" id="counter"></div>
+        <div class="modal-content">
+            <img id="modalImg" src="" alt="showcase pokemon infographic">
+        </div>
+        <button class="next" onclick="changeSlide(1)">&#10095;</button>
+    </div>
+    <footer>
+        <div>
+            <a href="https://github.com/yashrajbharti" target="_blank">
+                <img src="../images/Social/github.svg" alt="" height="16px">
+                Github
+            </a>
+            <a href="https://www.linkedin.com/in/yash-raj-bharti-5693b6183/" target="_blank">
+                <img src="../images/Social/linkedin.svg" alt="" height="16px">
+                LinkedIn
+            </a>
+            <a href="https://yashrajbharti.github.io/portfolio/" target="_blank">
+                <img src="../images/Social/dev.svg" alt="" height="16px">
+                Dev Portfolio
+            </a>
+            <a href="mailto:yashrajbharti.met18@itbhu.ac.in" target="_blank">
+                <img src="../images/Social/email.svg" alt="" height="16px">
+                Email
+            </a>
+        </div>
+        <span>@design portfolio by yash</span>
+    </footer>
+    <script src="../js/carousel.js"></script>
+</body>
+
+</html>
