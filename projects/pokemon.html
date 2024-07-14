@@ -70,7 +70,7 @@
                 alt="July Community Day featuring pokemon Tynamo" width="100%">
         </div>
     </section>
-    <div id="myModal" class="modal">
+    <div id="parent-modal" class="modal">
         <button class="close" onclick="closeModal()">&times;</button>
         <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
         <div class="modal-content">
@@ -105,7 +105,7 @@
 
     <script>
         const images = document.querySelectorAll('.grid img');
-        const modal = document.getElementById('myModal');
+        const modal = document.getElementById('parent-modal');
         const modalImg = document.getElementById('modalImg');
         const counter = document.getElementById('counter');
         let currentIndex = 0;
