@@ -18,7 +18,8 @@ section img:last-of-type {
     border-radius: 8px;
 }
 
-iframe {
+iframe,
+.substitute img {
     margin-block-start: 20px;
     max-inline-size: 750px;
     block-size: 400px;
@@ -37,8 +38,7 @@ main {
     align-items: center;
 }
 
-main h1,
-main h2 {
+main :is(h1, h2) {
     text-align: start;
 }
 
@@ -73,4 +73,34 @@ div.content a {
     color: #0e1012;
     text-decoration: underline;
     text-underline-offset: 3px;
+}
+
+#video-container {
+    inline-size: 100%;
+}
+
+.substitute img {
+    position: relative;
+    object-fit: cover;
+    object-position: 0 0;
+    border-radius: 8px;
+}
+
+.modal {
+    display: flex;
+    z-index: 2;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    inset-block-end: 0;
+    inset-inline-start: 0;
+    inline-size: 100%;
+    background-color: #fafffd;
+    border-block-start: 1px solid #e9ecef;
+}
+
+.modal-content {
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
 }

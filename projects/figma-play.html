@@ -12,20 +12,30 @@
 </head>
 
 <body class="geologica">
+    <div id="cookie-warning" class="modal">
+        <div class="modal-content">
+            <p>This video embeds YouTube content, which may set third-party cookies. Do you consent to this?</p>
+            <button id="accept">Accept</button>
+            <button id="decline">Decline</button>
+        </div>
+    </div>
     <main>
         <a href="/"><img class="logo" src="../images/Hero/yash.svg" alt="yash logo" width="65px"></a>
-        <h1> <img src="../images/Figma/Figma.png" alt="Figma logo" height="50px">
-            Don't Just Prototype, <span class="brand">Solve</span> client's needs</h1>
+        <h1> <img src="../images/Figma/Figma.png" alt="Figma logo" height="50px" width="50px">
+            Don't Just Prototype, <span class="brand">Solve</span> client's needs
+        </h1>
         <h2>Your client probably wants to see a website - my tool let's you do that, using Figma in <span
                 class="brand">0.1 seconds</span>!!</h2>
-        <iframe width="860" height="315" src="https://www.youtube-nocookie.com/embed/NYFIiC_oPcA?si=UxZOGY8jsFsozacI"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div id="video-container">
+            <a href="https://www.youtube.com/watch?v=NYFIiC_oPcA" target="_blank" class="substitute">
+                <img loading="lazy" src="../images/Screens/Figma Play.png" alt="Figma play watch youtube video">
+            </a>
+        </div>
+
     </main>
     <section>
         <h2 class="projects">- Application UI -</h2>
-        <img loading="lazy" src="../images/Screens/Figma Play.png" alt="Figma play web generator">
+        <img loading="lazy" src="../images/Screens/Figma Play.png" alt="Figma play web generator UI">
         <h2 class="projects">- UX Case Study: Enhancing Client Experience with Figma Play -</h2>
         <div class="content">
             <h3>Background (Observation)</h3>
@@ -133,6 +143,8 @@
         </div>
         <span>@design portfolio by yash</span>
     </footer>
+
+    <script src="../js/chips.js"></script>
 </body>
 
 </html>
