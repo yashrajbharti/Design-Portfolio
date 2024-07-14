@@ -68,3 +68,9 @@ section a {
 ul {
     margin-inline-start: 1rem;
 }
+
+div.content a {
+    color: #0e1012;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
