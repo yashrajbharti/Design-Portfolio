@@ -34,6 +34,11 @@ h1 img {
     margin-inline: auto;
 }
 
+.tools div img {
+    max-inline-size: 100%;
+    object-fit: contain;
+}
+
 :is(.tools, .discord) a {
     color: #3b5ec7;
 }
@@ -51,17 +56,25 @@ h1 img {
     inline-size: 100%;
 }
 
-.discord::after {
-    position: absolute;
-    content: "";
-    background-image: url(../images/Icons/Discord.svg);
-    height: 30px;
-    width: 30px;
-    background-size: contain;
-    inset-block-start: -10px;
-    inset-inline-start: calc(100% - 25px);
-}
-
 .gengar {
     filter: brightness(1.1);
+}
+
+@media (prefers-reduced-motion) {
+    .discord img {
+        content: url(../images/Icons/Discord.svg);
+    }
+}
+
+@media not (prefers-reduced-motion) {
+    .discord::after {
+        position: absolute;
+        content: "";
+        background-image: url(../images/Icons/Discord.svg);
+        height: 30px;
+        width: 30px;
+        background-size: contain;
+        inset-block-start: -10px;
+        inset-inline-start: calc(100% - 25px);
+    }
 }
