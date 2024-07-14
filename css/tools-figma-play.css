@@ -104,3 +104,9 @@ div.content a {
     border-radius: 5px;
     text-align: center;
 }
+
+@media screen and (width< 900px) {
+    main :is(h2, h1) {
+        text-align: center;
+    }
+}
