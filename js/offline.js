@@ -1,7 +1,6 @@
 const online = document.querySelector(".online");
 const offline = document.querySelector(".offline");
 document.addEventListener("offline", () => {
-  alert("j");
   offline.style.display = "flex";
   online.style.display = "none";
 });
