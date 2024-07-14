@@ -98,3 +98,9 @@ input {
     border-radius: 8px;
     text-align: center;
 }
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
+    gap: 20px;
+}
