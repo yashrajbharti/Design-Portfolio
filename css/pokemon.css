@@ -132,7 +132,7 @@ input {
 
 .modal-content img {
     inline-size: 100%;
-    block-size: 100vh;
+    block-size: 90vh;
     object-fit: contain;
 }
 
