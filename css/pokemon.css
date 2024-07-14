@@ -39,6 +39,7 @@ h1 img {
     align-items: center;
     background-color: #e9ecef;
     padding: 15px 25px;
+    padding-inline-start: 15px;
     border-radius: 10px;
     max-inline-size: 350px;
     inline-size: 100%;
