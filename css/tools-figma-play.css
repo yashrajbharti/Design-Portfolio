@@ -12,6 +12,10 @@ img {
     margin-inline: auto;
 }
 
+h1 img {
+    margin-block-end: 10px;
+}
+
 section img:last-of-type {
     max-inline-size: 500px;
     inline-size: 100%;
