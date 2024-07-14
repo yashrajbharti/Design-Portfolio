@@ -103,3 +103,38 @@ div.content a {
     text-decoration: underline;
     text-underline-offset: 3px;
 }
+
+:is(.offline, .online) {
+    position: fixed;
+    display: flex;
+    gap: 5px;
+    inset-block-start: 0;
+    inset-inline-start: 50%;
+    translate: -50% 0;
+    padding: 20px;
+    margin: 20px;
+    background-color: #e9ecef;
+    border-radius: 8px;
+}
+
+@media not (prefers-reduced-motion) {
+    .offline img {
+        display: inline-block;
+        animation: rotation 1s linear infinite forwards;
+    }
+
+    @keyframes rotation {
+        0% {
+            rotate: 0;
+        }
+
+        100% {
+            rotate: 360deg;
+        }
+    }
+}
+
+.offline,
+.online {
+    display: none;
+}

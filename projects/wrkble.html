@@ -115,9 +115,17 @@
             is offline, ensuring that important course edits and submissions are not missed. We added a spinning offline
             animation to indicate the system is trying to reconnect and a 1-second check symbol to show the user is back
             online. This approach helps manage user expectations and maintain a seamless experience.</p>
-
+        <br>
+        <p><b> Try Going offline and see what happens!</b></p>
     </section>
-
+    <div class="offline" aria-live="polite">
+        <img src="../images/Wrkble/loading.svg" alt="" role="presentation">
+        <p>Your'e offline. Trying to connect...</p>
+    </div>
+    <div class="online" aria-live="polite">
+        <img src="../images/Wrkble/done.svg" alt="" role="presentation">
+        <p>Your'e back online</p>
+    </div>
     <div id="parent-modal" class="modal">
         <button class="close" onclick="closeModal()">&times;</button>
         <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
@@ -149,6 +157,7 @@
         <span>@design portfolio by yash</span>
     </footer>
     <script src="../js/carousel.js"></script>
+    <script src="../js/offline.js"></script>
 </body>
 
 </html>
