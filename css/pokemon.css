@@ -168,9 +168,9 @@ input {
 
 .counter {
     position: absolute;
-    inset-block-start: 10px;
+    inset-block-start: 20px;
     inset-inline-start: 20px;
-    translate: -50% 0;
+    translate: 50% 0;
     color: #fafffd;
     font-size: 1.5rem;
 }
