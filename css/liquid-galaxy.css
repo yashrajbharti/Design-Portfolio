@@ -71,7 +71,7 @@ section>img {
 
 .comparison-slider {
     position: relative;
-    inline-size: max-content;
+    inline-size: fit-content;
     overflow: hidden;
     margin-inline: auto;
     border-radius: 16px;
