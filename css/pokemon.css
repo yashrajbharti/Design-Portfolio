@@ -144,7 +144,7 @@ input {
     translate: 0 -50%;
     background-color: transparent;
     border: none;
-    color: white;
+    color: #fafffd;
     filter: drop-shadow(2px 2px 10px #0e1012);
     padding: 10px;
     z-index: 1;
@@ -171,6 +171,6 @@ input {
     inset-block-start: 10px;
     inset-inline-start: 20px;
     translate: -50% 0;
-    color: white;
+    color: #fafffd;
     font-size: 1.5rem;
 }
