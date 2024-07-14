@@ -107,6 +107,8 @@ input {
 
 .grid img {
     cursor: pointer;
+    border-radius: 8px;
+    border: 4px solid #e2e2e2;
 }
 
 
