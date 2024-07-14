@@ -6,7 +6,9 @@ let isDragging = false;
 function moveHandle(x) {
   const rect = slider.getBoundingClientRect();
   let offsetX = x - rect.left;
-  offsetX = Math.max(0, Math.min(offsetX, rect.width));
+  const minOffset = 2; // Minimum offset to prevent handle from going all the way to the left
+  const maxOffset = rect.width - 15; // Maximum offset to prevent handle from going all the way to the right
+  offsetX = Math.max(minOffset, Math.min(offsetX, maxOffset));
   handle.style.left = offsetX + "px";
   beforeImageWrapper.style.width = offsetX + "px";
 }
