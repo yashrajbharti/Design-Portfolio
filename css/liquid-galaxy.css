@@ -1,0 +1,136 @@
+main {
+    text-align: center;
+    padding: 40px;
+    min-block-size: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    display: block;
+    text-align: center;
+}
+
+.content {
+    inline-size: 100%;
+    max-inline-size: 700px;
+    margin-inline: auto;
+    padding: 50px;
+    padding-block-start: 25px;
+    background-color: #e9ecef;
+    border-radius: 20px;
+}
+
+.content h3 {
+    margin-block-start: 20px;
+}
+
+ul {
+    margin-inline-start: 1rem;
+}
+
+div.content a {
+    color: #0e1012;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.docs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    background-color: #e9ecef;
+    max-inline-size: max-content;
+    margin-inline: auto;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+h2.projects {
+    margin-block-start: 30px;
+    margin-block-end: 20px;
+}
+
+section>img {
+    display: block;
+    max-inline-size: 800px;
+    inline-size: 100%;
+    margin-inline: auto;
+    text-align: center;
+}
+
+.responsive {
+    border-radius: 16px;
+    border: 4px solid #e2e2e2;
+}
+
+
+.comparison-slider {
+    position: relative;
+    inline-size: max-content;
+    overflow: hidden;
+    margin-inline: auto;
+    border-radius: 16px;
+    border: 4px solid #e2e2e2;
+}
+
+.comparison-slider img {
+    display: block;
+    inline-size: 100%;
+    object-fit: cover;
+    object-position: 0 0;
+    max-inline-size: 800px;
+
+}
+
+.comparison-slider .img-wrapper {
+    position: absolute;
+    inset-block-start: 0;
+    inset-inline-start: 0;
+    inline-size: 50%;
+    block-size: 100%;
+    overflow: hidden;
+}
+
+.comparison-slider .img-wrapper img {
+    position: absolute;
+    inset-block-start: 0;
+    inset-inline-start: 0;
+    height: 100%;
+}
+
+.comparison-slider .handle {
+    position: absolute;
+    inset-block-start: 0;
+    inset-inline-start: 50%;
+    inline-size: 5px;
+    block-size: 100%;
+    background-color: #e2e2e2;
+    cursor: ew-resize;
+    z-index: 2;
+}
+
+.comparison-slider .handle::before,
+.comparison-slider .handle::after {
+    content: "";
+    position: absolute;
+    inset-block-start: 50%;
+    translate: 0 -50%;
+    inline-size: 20px;
+    block-size: 20px;
+    background-color: #fafffd;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.comparison-slider .handle::before {
+    inset-inline-start: -10px;
+}
+
+.comparison-slider .handle::after {
+    inset-inline-end: -10px;
+}
