@@ -16,10 +16,35 @@ main img.accessibility {
 }
 
 .blur {
+    display: inline-block;
     filter: blur(1px);
     transition: fiter 0.2s ease;
 }
 
 .blur:hover {
     filter: blur(0px);
+}
+
+section {
+    text-align: center;
+}
+
+section h2 {
+    text-align: start;
+    margin-block-end: 10px;
+}
+
+section form {
+    inline-size: 100%;
+    max-inline-size: 400px;
+    margin-inline: auto;
+    padding: 20px;
+    background-color: #e9ecef;
+    border-radius: 20px;
+}
+
+#a11y-info div {
+    border-radius: 8px;
+    padding: 3px;
+    line-height: 1.2;
 }

@@ -17,13 +17,31 @@
         <h1>
             Maintain color contrast levels, upload images and check <span class="brand">A11y</span>
         </h1>
-        <h2>You probably don't want text to be <span class="blur">unreadable</span> at your site, or graphic, this tool
+        <h2>You probably don't want text to be <span class="blur">unreadable</span> at your site, app or graphic, this
+            tool
             helps you achieve <span class="brand">AAA</span>
             level of conformity</h2>
         <img class="accessibility" src="../images/Hero/Accessibility-colors.png"
             alt="Check Accessibility using A11y contrast checker">
     </main>
     <section>
+        <h2 class="projects">- Functionality UI -</h2>
+        <form action="javascript:void(0)">
+            <div>
+                <label for="color-1" aria-label="color 1">#676767</label>
+                <input type="color" name="color1" id="color-1" value="#676767" aria-labelledby="color1-label">
+            </div>
+            <div>
+                <label for="color-2" aria-label="color 2">#ffffff</label>
+                <input type="color" name="color2" id="color-2" value="#ffffff" aria-labelledby="color2-label">
+            </div>
+            <br> <br>
+            <div>
+                <output id="a11y-info" aria-live="polite">
+                </output>
+            </div>
+        </form>
+        <br>
         <a href="https://cybtekk-llp.github.io/a11y-checker/" class="button" target="_blank">View ↗</a>
     </section>
     <footer>
@@ -48,6 +66,8 @@
         <span>@design portfolio by yash</span>
     </footer>
 
+
+    <script src="../js/contrast-checker.js"></script>
 </body>
 
 </html>
