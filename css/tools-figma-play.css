@@ -90,24 +90,7 @@ div.content a {
     border-radius: 8px;
 }
 
-.modal {
-    display: flex;
-    z-index: 2;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    inset-block-end: 0;
-    inset-inline-start: 0;
-    inline-size: 100%;
-    background-color: #fafffd;
-    border-block-start: 1px solid #e9ecef;
-}
 
-.modal-content {
-    padding: 20px;
-    border-radius: 5px;
-    text-align: center;
-}
 
 @media screen and (width< 900px) {
     main :is(h2, h1) {
@@ -125,5 +108,24 @@ button {
 }
 
 button:first-of-type {
-    color: #4c72e6;
+    color: #4164d0;
+}
+
+.modal {
+    z-index: 2;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    border: none;
+    inset-block-end: 0;
+    inset-inline-start: 0;
+    inline-size: 100%;
+    background-color: #fafffd;
+    border-block-start: 1px solid #e9ecef;
+}
+
+.modal-content {
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
 }

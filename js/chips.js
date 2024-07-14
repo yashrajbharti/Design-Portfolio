@@ -1,5 +1,8 @@
+const dialog = document.getElementById("cookie-warning");
+dialog.show();
+
 document.getElementById("accept").addEventListener("click", function () {
-  document.getElementById("cookie-warning").style.display = "none";
+  dialog.close();
   document.getElementById("video-container").style.display = "block";
 
   if ("partitionedCookies" in document) {
@@ -15,11 +18,11 @@ document.getElementById("accept").addEventListener("click", function () {
       })
       .then(() => {
         document.getElementById("video-container").innerHTML = `
-         <iframe width="860" height="315" src="https://www.youtube-nocookie.com/embed/NYFIiC_oPcA?si=UxZOGY8jsFsozacI"
-    title="YouTube video player" frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
-    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    `;
+              <iframe width="860" height="315" src="https://www.youtube-nocookie.com/embed/NYFIiC_oPcA?si=UxZOGY8jsFsozacI"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            `;
       })
       .catch((error) => {
         console.error("Error setting partitioned cookie:", error);
@@ -27,16 +30,16 @@ document.getElementById("accept").addEventListener("click", function () {
   } else {
     console.warn("CHIPS not supported in this browser.");
     document.getElementById("video-container").innerHTML = `
-     <iframe width="860" height="315" src="https://www.youtube-nocookie.com/embed/NYFIiC_oPcA?si=UxZOGY8jsFsozacI"
-    title="YouTube video player" frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
-    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-`;
+          <iframe width="860" height="315" src="https://www.youtube-nocookie.com/embed/NYFIiC_oPcA?si=UxZOGY8jsFsozacI"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        `;
   }
 });
 
 document.getElementById("decline").addEventListener("click", function () {
-  document.getElementById("cookie-warning").style.display = "none";
+  dialog.close();
   document.getElementById(
     "video-container"
   ).innerHTML = `<a href="https://www.youtube.com/watch?v=NYFIiC_oPcA" target="_blank" class="substitute">
