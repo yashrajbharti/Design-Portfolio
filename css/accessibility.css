@@ -1,0 +1,16 @@
+main {
+    text-align: center;
+    padding: 40px;
+    block-size: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+main img.accessibility {
+    width: 100%;
+    max-width: 800px;
+    margin-inline: auto;
+}
