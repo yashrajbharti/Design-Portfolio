@@ -82,7 +82,7 @@ div.content a {
 .substitute img {
     position: relative;
     object-fit: cover;
-    object-position: 0 0;
+    object-position: 50% 0;
     border-radius: 8px;
 }
 

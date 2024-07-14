@@ -40,6 +40,6 @@ document.getElementById("decline").addEventListener("click", function () {
   document.getElementById(
     "video-container"
   ).innerHTML = `<a href="https://www.youtube.com/watch?v=NYFIiC_oPcA" target="_blank" class="substitute">
-        <img loading="lazy" src="../images/Screens/Figma Play.png" alt="Figma play watch youtube video">
+        <img loading="lazy" src="../images/Hero/Youtube Figma Play.png" alt="Figma play watch youtube video">
     </a>`;
 });
