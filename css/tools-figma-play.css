@@ -46,3 +46,24 @@ main h2 {
     margin-block-start: 40px;
     margin-block-end: 20px;
 }
+
+section a {
+    margin-block-start: 60px;
+}
+
+.content {
+    inline-size: 90%;
+    max-inline-size: 700px;
+    margin-inline: auto;
+    padding: 50px;
+    background-color: #e9ecef;
+    border-radius: 20px;
+}
+
+.content h3 {
+    margin-block-start: 20px;
+}
+
+ul {
+    margin-inline-start: 1rem;
+}
