@@ -128,4 +128,11 @@ button:first-of-type {
     padding: 20px;
     border-radius: 5px;
     text-align: center;
+    max-inline-size: 900px;
+    inline-size: 100%;
+    margin-inline: auto;
+}
+
+.modal-content menu {
+    margin-block-start: 5px;
 }
