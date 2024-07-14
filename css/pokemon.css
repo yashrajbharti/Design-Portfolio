@@ -82,7 +82,7 @@ h1 img {
 
 form {
     text-align: center;
-    background-color: #F4F1FA;
+    background-color: #e9ecef;
     inline-size: max-content;
     margin-inline: auto;
     padding: 25px;
@@ -92,8 +92,8 @@ form {
 input {
     padding: 10px 20px;
     font-size: 1rem;
-    font-weight: bold;
-    background-color: #F4F1FA;
+    font-weight: normal;
+    background-color: #e9ecef;
     border: 1px solid #0e1012;
     border-radius: 8px;
     text-align: center;
