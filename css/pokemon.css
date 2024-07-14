@@ -104,3 +104,71 @@ input {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 20px;
 }
+
+.grid img {
+    cursor: pointer;
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    inset-block-start: 0;
+    inset-inline-start: 0;
+    block-size: 100%;
+    inline-size: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.modal-content {
+    position: relative;
+    max-inline-size: 90%;
+    max-block-size: 90%;
+    text-align: center;
+}
+
+.modal-content img {
+    inline-size: 100vw;
+    block-size: 100vh;
+    object-fit: contain;
+}
+
+.modal .close,
+.modal .prev,
+.modal .next {
+    position: absolute;
+    inset-block-start: 50%;
+    translate: 0 -50%;
+    background-color: transparent;
+    border: none;
+    color: white;
+    padding: 10px;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.modal .close {
+    inset-block-start: 30px;
+    inset-inline-end: 20px;
+    transform: none;
+}
+
+.modal .prev {
+    inset-inline-start: 10px;
+}
+
+.modal .next {
+    inset-inline-end: 10px;
+}
+
+.counter {
+    position: absolute;
+    inset-block-start: 10px;
+    inset-inline-start: 20px;
+    translate: -50% 0;
+    color: white;
+    font-size: 1.5rem;
+}

@@ -70,6 +70,15 @@
                 alt="July Community Day featuring pokemon Tynamo" width="100%">
         </div>
     </section>
+    <div id="myModal" class="modal">
+        <button class="close" onclick="closeModal()">&times;</button>
+        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+        <div class="modal-content">
+            <img id="modalImg" src="">
+            <div class="counter" id="counter"></div>
+        </div>
+        <button class="next" onclick="changeSlide(1)">&#10095;</button>
+    </div>
     <footer>
         <div>
             <a href="https://github.com/yashrajbharti" target="_blank">
@@ -92,6 +101,46 @@
         <span>@design portfolio by yash</span>
     </footer>
     <script src="../js/pokemon.js"></script>
+
+
+    <script>
+        const images = document.querySelectorAll('.grid img');
+        const modal = document.getElementById('myModal');
+        const modalImg = document.getElementById('modalImg');
+        const counter = document.getElementById('counter');
+        let currentIndex = 0;
+
+        images.forEach((img, index) => {
+            img.addEventListener('click', () => {
+                openModal(index);
+            });
+        });
+
+        function openModal(index) {
+            currentIndex = index;
+            modal.style.display = 'flex';
+            updateModal();
+        }
+
+        function closeModal() {
+            modal.style.display = 'none';
+        }
+
+        function changeSlide(direction) {
+            currentIndex += direction;
+            if (currentIndex < 0) {
+                currentIndex = images.length - 1;
+            } else if (currentIndex >= images.length) {
+                currentIndex = 0;
+            }
+            updateModal();
+        }
+
+        function updateModal() {
+            modalImg.src = images[currentIndex].src;
+            counter.textContent = `${currentIndex + 1} / ${images.length}`;
+        }
+    </script>
 </body>
 
 </html>
