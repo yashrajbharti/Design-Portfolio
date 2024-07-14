@@ -4,7 +4,7 @@ main {
     block-size: 100vh;
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 20px;
     justify-content: center;
     align-items: center;
 }
@@ -13,4 +13,13 @@ main img.accessibility {
     width: 100%;
     max-width: 800px;
     margin-inline: auto;
+}
+
+.blur {
+    filter: blur(1px);
+    transition: fiter 0.2s ease;
+}
+
+.blur:hover {
+    filter: blur(0px);
 }
