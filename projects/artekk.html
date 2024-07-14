@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Portfolio | ARTekk</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/artekk.css">
+    <link rel="stylesheet" href="../css/modal.css">
+    <link rel="shortcut icon" href="../images/Hero/yash.svg" type="image/x-icon">
+    <meta name="description" content="Design portfolio showcasing the projects I led as a UX lead">
+</head>
+
+<body class="geologica">
+    <header>
+        <a href="#main" class="skip">Skip to main content</a>
+    </header>
+    <main>
+        <a href="/Design-Portfolio"><img class="logo" src="../images/Hero/yash.svg" alt="yash logo" width="65px"></a>
+        <h1>
+            <img src="../images/ARtekk/Logo.png" alt="ARTekk logo" height="60px" width="55px">
+            <span class="brand">ARtekk</span>: Immersive Augmented Reality Experiences
+        </h1>
+    </main>
+    <section>
+        <h2 id="main">- idea -</h2>
+        <p>ARtekk is my favorite project, designed to bring an immersive and straightforward augmented reality (AR) and
+            3D experience to various fields. We have created 12 verticals, including lens, clothes, footwear, cap,
+            makeup, jewelry, furniture, watches, cars, newspapers, and billboards. Each vertical allows users to explore
+            and interact with products in a cool and engaging way. ARtekk's innovative approach transforms how people
+            experience these items, providing a unique and captivating user experience.</p>
+        <br>
+        <h2 class="projects">- empathize -</h2>
+        <a class="forms" href="https://forms.gle/mfcSkfrnux8A9Ayv8" target="_blank">
+            <img src="../images/Icons/Forms.svg" alt="Google forms" height="40px">
+            <p>User Research survey forms for AR Mirror</p>
+        </a>
+        <br>
+        <p>We used Google Forms to get relevant data from diverse users who go shopping and may love to see an AR mirror
+            that shows with clothes as they virtually try-on.</p>
+        <h2 class="projects">- brand kit (Space Grotesk) -</h2>
+        <img class="border img small" src="../images/ARtekk/Logo-Black.png" alt="Logo in dark background">
+        <br>
+        <img class="border img small" src="../images/ARtekk/Logo-white.png" alt="Logo in light background">
+
+        <h2 class="projects">- components -</h2>
+        <img class="border img" src="../images/ARtekk/Components.png" alt="Components">
+        <h2 class="projects">- dev & design -</h2>
+        <a href="https://www.artekk.io" class="button" target="_blank">View ↗</a>
+
+        <div class="grid">
+
+        </div>
+    </section>
+    <div id="parent-modal" class="modal">
+        <button class="close" onclick="closeModal()">&times;</button>
+        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+        <div class="counter" id="counter"></div>
+        <div class="modal-content">
+            <img id="modalImg" src="" alt="showcase pokemon infographic">
+        </div>
+        <button class="next" onclick="changeSlide(1)">&#10095;</button>
+    </div>
+    <footer>
+        <div>
+            <a href="https://github.com/yashrajbharti" target="_blank">
+                <img src="../images/Social/github.svg" alt="" height="16px">
+                Github
+            </a>
+            <a href="https://www.linkedin.com/in/yash-raj-bharti-5693b6183/" target="_blank">
+                <img src="../images/Social/linkedin.svg" alt="" height="16px">
+                LinkedIn
+            </a>
+            <a href="https://yashrajbharti.github.io/portfolio/" target="_blank">
+                <img src="../images/Social/dev.svg" alt="" height="16px">
+                Dev Portfolio
+            </a>
+            <a href="mailto:yashrajbharti.met18@itbhu.ac.in" target="_blank">
+                <img src="../images/Social/email.svg" alt="" height="16px">
+                Email
+            </a>
+        </div>
+        <span>@design portfolio by yash</span>
+    </footer>
+    <script src="../js/carousel.js"></script>
+</body>
+
+</html>
