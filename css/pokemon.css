@@ -40,9 +40,10 @@ h1 img {
 
 .discord {
     display: flex;
+    position: relative;
     gap: 10px;
     align-items: center;
-    background-color: #e9ecef;
+    background-color: #F4F1FA;
     padding: 15px 25px;
     padding-inline-start: 15px;
     border-radius: 10px;
@@ -50,7 +51,17 @@ h1 img {
     inline-size: 100%;
 }
 
+.discord::after {
+    position: absolute;
+    content: "";
+    background-image: url(../images/Icons/Discord.svg);
+    height: 30px;
+    width: 30px;
+    background-size: contain;
+    inset-block-start: -10px;
+    inset-inline-start: calc(100% - 25px);
+}
 
 .gengar {
-    filter: brightness(1.5);
+    filter: brightness(1.1);
 }
