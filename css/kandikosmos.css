@@ -1,0 +1,72 @@
+main {
+    text-align: center;
+    padding: 40px;
+    min-block-size: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    display: block;
+    text-align: center;
+}
+
+section p,
+section ul {
+    max-inline-size: 800px;
+    margin-inline: auto;
+}
+
+h2.projects {
+    margin-block-start: 30px;
+    margin-block-end: 20px;
+}
+
+.kit {
+    mix-blend-mode: multiply;
+    display: block;
+    text-align: center;
+    max-inline-size: 600px;
+    inline-size: 100%;
+    margin-inline: auto;
+}
+
+.kit:first-of-type {
+    margin-block-start: 10px;
+    max-inline-size: 400px;
+}
+
+.kit:nth-of-type(2) {
+    max-inline-size: 700px;
+}
+
+section li {
+    margin-inline-start: 20px;
+}
+
+.border {
+    border-radius: 16px;
+    border: 4px solid #e2e2e2;
+}
+
+.center {
+    text-align: center;
+    margin-block-start: 10px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    inline-size: 90%;
+    margin-inline: auto;
+}
+
+.grid img {
+    cursor: pointer;
+    border-radius: 8px;
+    border: 4px solid #e2e2e2;
+}
