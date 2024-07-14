@@ -50,6 +50,10 @@ div.content a {
     border-radius: 8px;
 }
 
+.docs a {
+    color: #4164d0;
+}
+
 h2.projects {
     margin-block-start: 30px;
     margin-block-end: 20px;
