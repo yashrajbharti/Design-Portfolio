@@ -1,7 +1,7 @@
 main {
     text-align: center;
     padding: 40px;
-    block-size: 100vh;
+    min-block-size: 100vh;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -77,4 +77,24 @@ h1 img {
         inset-block-start: -10px;
         inset-inline-start: calc(100% - 25px);
     }
+}
+
+
+form {
+    text-align: center;
+    background-color: #F4F1FA;
+    inline-size: max-content;
+    margin-inline: auto;
+    padding: 25px;
+    border-radius: 16px
+}
+
+input {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #F4F1FA;
+    border: 1px solid #0e1012;
+    border-radius: 8px;
+    text-align: center;
 }
