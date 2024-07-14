@@ -110,3 +110,16 @@ div.content a {
         text-align: center;
     }
 }
+
+button {
+    background-color: transparent;
+    border: none;
+    font-size: 1rem;
+    margin: 0 10px;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+button:first-of-type {
+    color: #4c72e6;
+}
