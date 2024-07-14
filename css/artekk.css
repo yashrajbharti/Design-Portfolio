@@ -43,6 +43,7 @@ section ul {
 
 h2.projects {
     margin-block-start: 20px;
+    margin-block-end: 10px;
 }
 
 .border {
