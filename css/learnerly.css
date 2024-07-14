@@ -46,3 +46,8 @@ section>img {
 img.small {
     max-inline-size: 300px;
 }
+
+.border {
+    border-radius: 8px;
+    border: 2px solid #e2e2e2;
+}
