@@ -48,8 +48,31 @@
         <h2 class="projects">- prototype -</h2>
         <img class="border" loading="lazy" src="../images/Learnerly/Prototype.png" alt="Components">
         <h2 class="projects">- designs -</h2>
+        <br>
+        <div class="grid">
 
+            <img loading="lazy" src="../images/Learnerly/Learnerly.png" alt="Leading Screen" width="100%">
+            <img loading="lazy" src="../images/Learnerly/Dashboard.png" alt="Dashboard" width="100%">
+            <img loading="lazy" src="../images/Learnerly/Dashboard Menu.png" alt="Dashboard menu" width="100%">
+            <img loading="lazy" src="../images/Learnerly/Create a Course.png" alt="Create a course using mobile"
+                width="100%">
+            <img loading="lazy" src="../images/Learnerly/Create a Quiz.png" alt="Create a quiz" width="100%">
+            <img loading="lazy" src="../images/Learnerly/Individual Creator Details.png" alt="Certification"
+                width="100%">
+            <img loading="lazy" src="../images/Learnerly/Create a Course.jpg" alt="Create a course using desktop"
+                width="100%">
+            <img loading="lazy" src="../images/Learnerly/Manage Styling.jpg" alt="Screen Builder" width="100%">
+        </div>
     </section>
+    <div id="parent-modal" class="modal">
+        <button class="close" onclick="closeModal()">&times;</button>
+        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+        <div class="counter" id="counter"></div>
+        <div class="modal-content">
+            <img id="modalImg" src="" alt="showcase pokemon infographic">
+        </div>
+        <button class="next" onclick="changeSlide(1)">&#10095;</button>
+    </div>
     <footer>
         <div>
             <a href="https://github.com/yashrajbharti" target="_blank">
@@ -71,7 +94,7 @@
         </div>
         <span>@design portfolio by yash</span>
     </footer>
-
+    <script src="../js/carousel.js"></script>
 </body>
 
 </html>
