@@ -91,6 +91,10 @@ section>img {
 
 }
 
+.comparison-slider *::selection {
+    background-color: transparent;
+}
+
 .comparison-slider .img-wrapper {
     position: absolute;
     inset-block-start: 0;
