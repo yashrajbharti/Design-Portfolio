@@ -249,6 +249,7 @@ footer div {
     display: flex;
     justify-content: center;
     gap: 15px;
+    flex-wrap: wrap;
     margin-block-end: 10px;
 }
 
