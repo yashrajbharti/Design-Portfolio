@@ -66,6 +66,10 @@ h2.projects {
     max-inline-size: 300px;
 }
 
+.img.extra-small {
+    max-inline-size: 200px;
+}
+
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));

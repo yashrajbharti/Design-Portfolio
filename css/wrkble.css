@@ -44,6 +44,15 @@ img.small {
     max-inline-size: 500px;
 }
 
+img.large {
+    max-inline-size: 600px;
+}
+
+
+img.extra-small {
+    max-inline-size: 200px;
+}
+
 .border {
     border-radius: 8px;
     border: 2px solid #e2e2e2;

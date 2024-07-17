@@ -34,12 +34,12 @@ h2.projects {
     margin-inline: auto;
 }
 
-.kit:first-of-type {
+.kit.small {
     margin-block-start: 10px;
     max-inline-size: 400px;
 }
 
-.kit:nth-of-type(2) {
+.kit.large {
     max-inline-size: 700px;
 }
 
