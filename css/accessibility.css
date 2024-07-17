@@ -1,3 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #fafffd;
+    color: #0e1012;
+    max-inline-size: 1440px;
+    margin-inline: auto;
+}
+
+.geologica {
+    font-family: "Geologica", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+        "slnt" 0,
+        "CRSV" 0,
+        "SHRP" 0;
+}
+
+h1 {
+    font-size: clamp(32px, calc(3vw + 15px), 64px);
+}
+
+a {
+    color: #4c72e6;
+    text-decoration: none;
+}
+
+.brand {
+    color: #4c72e6;
+}
+
+.logo {
+    position: absolute;
+    inset-inline-start: 0;
+    inset-block-start: 0;
+    margin: 30px;
+}
+
+section {
+    padding: 40px;
+}
+
+h2.projects {
+    font-size: 14px;
+    font-weight: 300;
+    color: #242a2f;
+}
+
+footer {
+    border-block-start: 1px solid #e4e4e4;
+    margin-block-start: 20px;
+    padding-block-start: 20px;
+    text-align: center;
+    margin-block-end: 20px;
+}
+
+footer div {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-block-end: 10px;
+}
+
+footer div a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: opacity 0.3s ease;
+    color: #0e1012;
+}
+
+footer div a,
+footer span {
+    opacity: 0.6;
+}
+
+footer div a:hover {
+    opacity: 1;
+}
+
+.button {
+    position: relative;
+    display: block;
+    background-color: transparent;
+    border: none;
+    color: #0e1012;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    inline-size: 100%;
+    text-align: center;
+}
+
+.button::after {
+    content: '';
+    position: absolute;
+    width: 6ch;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 1px;
+    left: calc(50% - 3ch);
+    background-color: #4c72e6;
+    transform-origin: bottom left;
+    transition: transform 0.3s ease-out;
+}
+
+.button:hover::after {
+    transform: scaleX(1);
+}
+
 main {
     text-align: center;
     padding: 40px;
@@ -10,8 +130,8 @@ main {
 }
 
 main img.accessibility {
-    width: 100%;
-    max-width: 800px;
+    inline-size: 100%;
+    max-inline-size: 800px;
     height: auto;
     object-fit: contain;
     margin-inline: auto;
