@@ -12,6 +12,8 @@ main {
 main img.accessibility {
     width: 100%;
     max-width: 800px;
+    height: auto;
+    object-fit: contain;
     margin-inline: auto;
 }
 
