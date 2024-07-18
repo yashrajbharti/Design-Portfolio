@@ -16,10 +16,15 @@ h1 img {
     margin-block-end: 10px;
 }
 
-section img:last-of-type {
+section img.small {
     max-inline-size: 500px;
     inline-size: 100%;
     border-radius: 8px;
+}
+
+.border {
+    border-radius: 8px;
+    border: 2px solid #e2e2e2;
 }
 
 iframe,
