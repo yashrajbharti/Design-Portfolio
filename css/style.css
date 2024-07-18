@@ -185,6 +185,7 @@ h2.projects {
     content: "";
     background-color: #e9ecef;
     width: calc(100vw - 80px);
+    max-width: 1360px;
     height: 200px;
     z-index: -1;
     border-radius: 16px;
