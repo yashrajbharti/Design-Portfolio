@@ -142,3 +142,18 @@ section>img {
 .comparison-slider .handle::after {
     inset-inline-end: -10px;
 }
+
+section p,
+section ul {
+    max-inline-size: 800px;
+    margin-inline: auto;
+}
+
+li>ul,
+.shift li {
+    margin-inline-start: 1rem;
+}
+
+ul li:not(:last-child) {
+    margin-block-end: 5px;
+}

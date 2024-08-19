@@ -111,3 +111,7 @@ section>img {
 .grid .border {
     border-radius: 24px;
 }
+
+ul li:not(:last-child) {
+    margin-block-end: 5px;
+}

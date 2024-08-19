@@ -151,3 +151,7 @@ div.content a {
 .online {
     display: none;
 }
+
+ul li:not(:last-child) {
+    margin-block-end: 5px;
+}

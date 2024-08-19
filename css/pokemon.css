@@ -100,6 +100,10 @@ input {
     text-align: center;
 }
 
+input::placeholder {
+    color: #676767;
+}
+
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -110,4 +114,22 @@ input {
     cursor: pointer;
     border-radius: 8px;
     border: 4px solid #e2e2e2;
+}
+
+h2.projects {
+    margin-block-start: 20px;
+}
+
+section p,
+section ul {
+    max-inline-size: 800px;
+    margin-inline: auto;
+}
+
+ul li:not(:last-child) {
+    margin-block-end: 5px;
+}
+
+ul>li>ul {
+    margin-inline-start: 1rem;
 }

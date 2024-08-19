@@ -25,39 +25,90 @@
         <img src="../images/KandiKosmos/Pearl.svg" alt="Pearl" height="70px">
     </main>
     <section>
-        <h2 id="main">- idea -</h2>
-        <p>Kandi Kosmos is a unique social app designed for the vibrant kandi festival culture. This festival is
-            traditional for some countries,
-            and they exchange beads; our idea is to sell beads that have a QR code and an app called Kandi Kosmos, where
-            your owned beads are scanned and added. Now you can see the bead information and add social media posts; the
-            kandi keeps posts and tracks miles traveled. The fun part is that you can exchange them and scan to see what
-            other people (previous owners of kandi) have added to the bead. <br><b>Note:</b> The term kandi is for a
-            "bead" and
-            it
-            looks like a bracelet and has pearls, in UI we associate a bead to a pearl icon. Thus bead and Kandi are
-            synonymous</p>
+        <h2 id="main">- brief -</h2>
+        <p>Kandi Kosmos is a social media app designed for the kandi festival culture, where
+            beads (kandi) are exchanged and collected. The app allows users to scan QR codes on beads to view
+            information, add social media posts, and track the beads' geographical journey. It also enables users to see
+            previous owners' posts associated with each bead.</p>
+        <h2 class="projects">- context -</h2>
+        <p>The kandi festival is a traditional event involving the exchange of decorative beads. Kandi Kosmos aims to
+            modernize and enhance this experience by integrating technology, allowing users to track and interact with
+            beads digitally.</p>
         <br>
         <img loading="lazy" class="kit small border" src="../images/KandiKosmos/Idea.webp"
             title="Physical Kandi prototype 3D print" alt="Physical Kandi prototype 3D print">
+        <h2 class="projects">- problem statement -</h2>
+        <p>The traditional kandi festival lacks a digital component that connects participants and tracks the history of
+            beads. There is a need for a platform that bridges the gap between tradition and technology, enhancing the
+            festival experience and connecting people globally.</p>
+        <h2 class="projects">- crafted solution -</h2>
+        <ul>
+            <li><b>Scans and Tracks Beads:</b> Uses QR codes on beads to add and view
+                information.</li>
+            <li><b>Social Media Integration:</b> Allows users to post and interact with bead-related
+                content.</li>
+            <li><b>Geographical Tracking:</b> Uses Cesium globe to display the journey and global
+                connectivity of beads.</li>
+            <li><b>Design Tools:</b> Created a Figma plugin and web component for generating
+                random bead colors and patterns.</li>
+        </ul>
+        <h2 class="projects">- timeline -</h2>
+        <ul>
+            <li><b>Team:</b> Paawan (Designer), Yogendra (Senior Designer), Sahil (Product Manager), Gourav (Frontend),
+                Lovely (Frontend), Shubhi (Backend), Merul (Senior Backend & CTO), Ananya (Frontend Intern), Prashant
+                (Marketing Lead, Host for click actions), Jyoti (Social Media), Pratibha (Marketing & Sales), and Yash
+                (User Experience Lead).</li>
+            <li><b>Role:</b> Lead UX Engineer and Figma Plugin Developer</li>
+            <li><b>Duration:</b> 8 weeks</li>
+            <li><b>Tools Utilized:</b> Figma, HTML, CSS, JavaScript, TypeScript, Svelte, Postgres, GitHub,
+                Flowbite design system, Cesium globe, web components, figma plugins</li>
+        </ul>
         <h2 class="projects">- brand kit -</h2>
         <img loading="lazy" class="kit small" src="../images/KandiKosmos/Colors_KandiKosmos.png"
             alt="Primary, Secondary and Tertiary Colors">
         <img loading="lazy" class="kit" src="../images/KandiKosmos/Typography_KandiKosmos.png" alt="Satoshi font">
         <img loading="lazy" class="kit" src="../images/KandiKosmos/Colors.png" alt="Colors for our brand">
         <img loading="lazy" class="kit" src="../images/KandiKosmos/Typography.png" alt="Typography for our brand">
-        <h2 id="main">- flowbite design system -</h2>
+        <h2 class="projects">- design system style guide -</h2>
         <img loading="lazy" class="kit design" src="../images/KandiKosmos/Design System.jpg" alt="">
         <p>To ensure a seamless and cohesive design process, we adopted the Flowbite design system. This system provided
             numerous benefits:
         <ul>
-            <li>Consistency: Flowbite ensured a uniform look and feel across the app, enhancing the user experience.
+            <li><b>Consistency:</b> Flowbite ensured a uniform look and feel across the app, enhancing the user
+                experience.
             </li>
-            <li>Efficiency: The pre-defined components and styles accelerated the design process, allowing us to focus
+            <li><b>Efficiency:</b> The pre-defined components and styles accelerated the design process, allowing us to
+                focus
                 more on innovation.</li>
-            <li>Scalability: The modular nature of Flowbite made it easy to scale the app's design as new features were
+            <li><b>Scalability:</b> The modular nature of Flowbite made it easy to scale the app's design as new
+                features were
                 added.</li>
         </ul>
         </p>
+        <h2 class="projects">- project goals -</h2>
+        <ul>
+            <li>To create a social app that enhances the kandi festival experience by integrating technology.</li>
+            <li>To provide a platform for users to track, share, and connect through beads.</li>
+            <li>To develop tools that facilitate design and development, ensuring a seamless workflow.</li>
+        </ul>
+        <h2 class="projects">- research -</h2>
+        <ul>
+            <li><b>Personas:</b> Developed personas for festival-goers, bead collectors, and social media users
+                interested in the kandi culture.</li>
+            <li><b>Target Audience:</b> Participants of the kandi festival, collectors, and enthusiasts</li>
+            <li><b>Analysis:</b> Identified the need for a digital solution that combines traditional bead
+                exchange with modern social media features and global connectivity.</li>
+        </ul>
+        <h2 class="projects">- brainstorm and ideation -</h2>
+        <ul>
+            <li><b>Possible Solutions:</b> Explored features such as QR code scanning (using different plugins which
+                offer different designs) and geographical tracking. Considered various ways to visually represent bead
+                information and user
+                interactions. Explored Mapbox, Google Earth, Cesium and Google Maps Decoding for geographical tracking.
+            </li>
+            <li><b>Chosen Solution:</b> Implemented QR code scanning with EasyQR code plugin and an interactive Cesium
+                globe for tracking bead journeys. Created design tools to streamline the process.</li>
+        </ul>
         <h2 class="projects" id="bead">
             - random color kandi generator -
         </h2>
@@ -84,30 +135,71 @@
         <img loading="lazy" class="kit border" src="../images/KandiKosmos/KandiGenerator.png" alt="Kandi Generator tool"
             title="Performance and collisions">
         <a href="https://cybtekk-llp.github.io/Unique-SVG-Generator/" class="button" target="_blank">View ↗</a>
-
+        <h2 class="projects">- iterations -</h2>
+        <p>Iterated on designs based on user feedback and testing. Refined the scanning process and enabled scanning
+            options to see post without login (Guest mode), social media features (Edit, Report, etc), and geographical
+            tracking (GPS location opt-in) to improve
+            functionality and user experience.</p>
+        <h2 class="projects">- sketches and wireframes -</h2>
+        <p>Created initial sketches and wireframes focusing on the user flow from scanning beads to viewing their
+            history and adding posts. Emphasized a vibrant, engaging design consistent with the kandi festival's
+            aesthetic.</p>
+        <h2 class="projects">- usability testing -</h2>
+        <p>Conducted usability tests to ensure the app met user needs and expectations. Tested features such as QR code
+            scanning (that didn't work correctly before in Guest mode), bead visualization (that also had problems for
+            non signed in users), and geographical tracking (where we faced Cesium Globe not showing in some old devices
+            because of a bug in their codebase and had to tweak atmosphere in the viewer to make in work) to gather
+            feedback and make improvements.</p>
         <h2 class="projects">
-            - Design Pages and Interactive Earth -
+            - design pages and interactive earth -
         </h2>
         <p>Our design pages showcase the user journey, from scanning a bead to viewing its history and adding new posts.
             To visually represent the geographical journey of each bead, we integrated the Cesium globe into the app.
             This interactive map displays markers for posts associated with each kandi bead, highlighting the global
             connectivity of posts shown via Kandi Kosmos.</p>
+        <br>
+        <div class="grid">
+            <img loading="lazy" src="../images/KandiKosmos/Auth.png" alt="Login" width="100%">
+            <img loading="lazy" src="../images/KandiKosmos/Home.png" alt="Home Page" width="100%">
+            <img loading="lazy" src="../images/KandiKosmos/Bead Creation.png" alt="Create bead" width="100%">
+            <img loading="lazy" src="../images/KandiKosmos/Enter passcode.png" alt="Enter Passcode" width="100%">
+            <img loading="lazy" src="../images/KandiKosmos/Name your kandi.png" alt="Add name to kandi bead"
+                width="100%">
+            <img loading="lazy" src="../images/KandiKosmos/Create Post.png" alt="Create a post" width="100%">
+            <img loading="lazy" src="../images/KandiKosmos/Create Post Map.png" alt="Add location to post" width="100%">
+            <img loading="lazy" src="../images/KandiKosmos/All posts.png" alt="All posts" width="100%">
+            <img loading="lazy" src="../images/KandiKosmos/Profile.png" alt="User Profile" width="100%">
+            <img loading="lazy" src="../images/KandiKosmos/cesium.gif" alt="Globe View" width="100%">
+            <img loading="lazy" src="../images/KandiKosmos/Dashboard.png" alt="Admin Dashboard" width="100%">
+            <img loading="lazy" src="../images/KandiKosmos/Dashboard Table.png" alt="Admin Dashboard Table"
+                width="100%">
+            <img loading="lazy" src="../images/KandiKosmos/QR Data.png" alt="QR print kandi" width="100%">
+        </div>
+        <br>
+        <h2 class="projects">- conclusion -</h2>
+        <ul>
+            <li><b>Challenges:</b> Ensuring seamless integration of QR codes, social media features, and geographical
+                tracking. Balancing traditional festival elements with modern technology.</li>
+            <li><b>Learnings:</b> Highlighted the importance of creating engaging and intuitive user experiences while
+                integrating new technologies.</li>
+            <li><b>Outcomes:</b> Successfully modernized the kandi festival experience, providing a digital platform
+                that enhances user interaction and global connectivity.</li>
+        </ul>
+        <h2 class="projects">- scope of improvements -</h2>
+        <p>Future enhancements could include additional social media features (group posts), expanded geographical
+            tracking
+            capabilities (showing a path instead of marker in Cesium Globe), and further refinements to the design
+            tools.
+        </p>
+        <h2 class="projects">- what could have been better -</h2>
+        <p>Initial designs could have included more user feedback to ensure the app met all user needs effectively,
+            particularly in the areas of guest mode UI screens and geographical tracking shown in Cesium.</p>
+        <h2 class="projects">- final feedback and suggestions -</h2>
+        <p>The project effectively bridged the gap between tradition and technology, receiving positive feedback for its
+            innovative approach and engaging design. Future iterations should continue to focus on refining user
+            interactions and exploring new features to enhance the app further.</p>
     </section>
-    <div class="grid">
-        <img loading="lazy" src="../images/KandiKosmos/Auth.png" alt="Login" width="100%">
-        <img loading="lazy" src="../images/KandiKosmos/Home.png" alt="Home Page" width="100%">
-        <img loading="lazy" src="../images/KandiKosmos/Bead Creation.png" alt="Create bead" width="100%">
-        <img loading="lazy" src="../images/KandiKosmos/Enter passcode.png" alt="Enter Passcode" width="100%">
-        <img loading="lazy" src="../images/KandiKosmos/Name your kandi.png" alt="Add name to kandi bead" width="100%">
-        <img loading="lazy" src="../images/KandiKosmos/Create Post.png" alt="Create a post" width="100%">
-        <img loading="lazy" src="../images/KandiKosmos/Create Post Map.png" alt="Add location to post" width="100%">
-        <img loading="lazy" src="../images/KandiKosmos/All posts.png" alt="All posts" width="100%">
-        <img loading="lazy" src="../images/KandiKosmos/Profile.png" alt="User Profile" width="100%">
-        <img loading="lazy" src="../images/KandiKosmos/cesium.gif" alt="Globe View" width="100%">
-        <img loading="lazy" src="../images/KandiKosmos/Dashboard.png" alt="Admin Dashboard" width="100%">
-        <img loading="lazy" src="../images/KandiKosmos/Dashboard Table.png" alt="Admin Dashboard Table" width="100%">
-        <img loading="lazy" src="../images/KandiKosmos/QR Data.png" alt="QR print kandi" width="100%">
-    </div>
+
     <div id="parent-modal" class="modal">
         <button class="close" onclick="closeModal()">&times;</button>
         <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
