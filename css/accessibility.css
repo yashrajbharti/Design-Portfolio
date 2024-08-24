@@ -90,27 +90,28 @@ footer div a:hover {
 
 .button {
     position: relative;
-    display: block;
+    display: flex;
     background-color: transparent;
     border: none;
     color: #0e1012;
     font-size: 20px;
     padding: 10px;
     border-radius: 10px;
-    inline-size: 100%;
+    margin-inline: auto;
+    inline-size: max-content;
     text-align: center;
 }
 
 .button::after {
     content: '';
     position: absolute;
-    width: 6ch;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 1px;
-    left: calc(50% - 3ch);
+    inline-size: 100%;
+    transform: scaleX(0.2);
+    block-size: 2px;
+    inset-block-end: 1px;
+    inset-inline-start: 0;
     background-color: #4c72e6;
-    transform-origin: bottom left;
+    transform-origin: bottom center;
     transition: transform 0.3s ease-out;
 }
 

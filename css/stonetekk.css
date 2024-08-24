@@ -115,3 +115,7 @@ section>img {
 ul li:not(:last-child) {
     margin-block-end: 5px;
 }
+
+button.button {
+    cursor: pointer;
+}
