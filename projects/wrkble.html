@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="../css/modal.css">
     <link rel="shortcut icon" href="../images/Hero/yash.svg" type="image/x-icon">
     <meta name="description" content="Design portfolio showcasing the projects I led as a UX lead">
+    <script src="../js/components/Cart.js"></script>
+    <script src="../js/components/Wishlist.js"></script>
 </head>
 
 <body class="geologica">
@@ -101,7 +103,18 @@
         <p>Iterated on the platform's design based on user feedback, focusing on improving navigation, enhancing user
             engagement, and ensuring the platform was accessible and intuitive.</p>
         <h2 class="projects">- components -</h2>
+
         <img loading="lazy" class="border" src="../images/Wrkble/Components.png" alt="Components used in design">
+        <h2 class="projects">- svg animations -</h2>
+        <p>Created interactive SVG animations for cart and wishlist and the interactions helped people enjoy the
+            purchasing (and wishlisting) process with gamification effect, try clicking the icons below: </p>
+        <br>
+
+        <form action="javascript:void(0)" style="display: flex; gap: 10px; justify-content: center;">
+            <wishlist-component></wishlist-component>
+            <cart-component></cart-component>
+        </form>
+
         <h2 class="projects">- prototype -</h2>
         <p>Created a fully interactive prototype in Figma, showcasing the user journey from course selection to project
             submission. This prototype was used for stakeholder presentations and usability testing.</p>
