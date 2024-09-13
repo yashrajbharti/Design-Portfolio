@@ -19,11 +19,6 @@ class CartComponent extends HTMLElement {
         border-radius: 5px;
         cursor: pointer;
         }
-        @media screen and (width <= 540px) {
-        .label {
-            scale: 0.9;
-        }
-        }
         .label > svg.cart > .add {
         translate: 9px 0;
         -webkit-transition: rotate 0.3s ease, opacity 0.2s ease-in;
