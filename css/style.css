@@ -176,7 +176,7 @@ h2.projects {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     align-items: center;
     justify-content: center;
-    margin-block-start: 30px;
+    margin-block-start: 70px;
     gap: 15px;
 }
 
@@ -186,13 +186,13 @@ h2.projects {
     background-color: #e9ecef;
     width: calc(100vw - 80px);
     max-width: 1360px;
-    height: 200px;
+    height: 450px;
     z-index: -1;
     border-radius: 16px;
     inset-inline-start: 0;
 }
 
-@media screen and (width< 900px) {
+@media screen and (width < 1440px) {
     #projects article {
         background-color: #e9ecef;
         padding: 40px 25px;
@@ -213,29 +213,144 @@ h2.projects {
     border-radius: 16px;
     max-inline-size: 100%;
     border: 4px solid #e2e2e2;
+    margin-inline-start: 40px;
 }
 
 .web,
 .mobile,
-.graphic {
+.graphic,
+.figma,
+.html,
+.css,
+.js,
+.ts,
+.svelte,
+.postgres,
+.web-components,
+.webxr,
+.ux-design,
+.accessibility,
+.github,
+.prototyping,
+.usability-testing,
+.user-research,
+.ui-ux,
+.maps,
+.cesium,
+.illustrator,
+.photoshop,
+.blender,
+.sketch,
+.material {
     display: inline-block;
     padding: 5px 10px;
     border-radius: 8px;
+    margin: 5px;
+
 }
 
 .web {
     background-color: #4c72e625;
-    margin: 5px 0;
 }
 
 .graphic {
     background-color: #e6e66d8f;
-    margin: 5px 0;
 }
 
 .mobile {
     background-color: #a239ee2f;
-    margin: 5px;
+}
+
+.figma {
+    background-color: #f24e1e25;
+}
+
+.html {
+    background-color: #E44D2625;
+}
+
+.css {
+    background-color: #2965F125;
+}
+
+.js {
+    background-color: #F7DF1E25;
+}
+
+.ts {
+    background-color: #3178C625;
+}
+
+.svelte {
+    background-color: #FF3E0025;
+}
+
+.postgres {
+    background-color: #33679125;
+}
+
+.web-components {
+    background-color: #29ABE225;
+}
+
+.webxr {
+    background-color: #FF660025;
+}
+
+.ux-design {
+    background-color: #FF336625;
+}
+
+.prototyping {
+    background-color: #33CC9925;
+}
+
+.usability-testing {
+    background-color: #6699FF25;
+}
+
+.accessibility {
+    background-color: #6633CC25;
+}
+
+.github {
+    background-color: #24292E25;
+}
+
+.ui-ux {
+    background-color: #007ACC25;
+}
+
+.user-research {
+    background-color: #F5A62325;
+}
+
+.cesium {
+    background-color: #2B6DA725;
+}
+
+.maps {
+    background-color: #4285F425;
+}
+
+.material {
+    background-color: #6200EE25;
+}
+
+.sketch {
+    background-color: #F7B50025;
+}
+
+.blender {
+    background-color: #F5842625;
+}
+
+.photoshop {
+    background-color: #31A8FF25;
+}
+
+.illustrator {
+    background-color: #FF9A0025;
 }
 
 footer {
