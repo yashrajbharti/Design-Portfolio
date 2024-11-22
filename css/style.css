@@ -192,6 +192,13 @@ h2.projects {
     inset-inline-start: 0;
 }
 
+#projects article img {
+    border-radius: 16px;
+    max-inline-size: 100%;
+    border: 4px solid #e2e2e2;
+    margin-inline-start: 40px;
+}
+
 @media screen and (width < 1440px) {
     #projects article {
         background-color: #e9ecef;
@@ -201,19 +208,14 @@ h2.projects {
     }
 
     #projects article img {
+        margin-inline-start: 0;
         margin-inline: auto;
     }
+
 }
 
 #projects article h2 {
     text-align: center;
-}
-
-#projects article img {
-    border-radius: 16px;
-    max-inline-size: 100%;
-    border: 4px solid #e2e2e2;
-    margin-inline-start: 40px;
 }
 
 .web,
