@@ -243,7 +243,9 @@ h2.projects {
 .photoshop,
 .blender,
 .sketch,
-.material {
+.material,
+.react,
+.contact-picker {
     display: inline-block;
     padding: 5px 10px;
     border-radius: 8px;
@@ -353,6 +355,15 @@ h2.projects {
 
 .illustrator {
     background-color: #FF9A0025;
+}
+
+.react {
+    background-color: #61DAFB25;
+}
+
+.contact-picker {
+    background-color: #6C63FF25;
+
 }
 
 footer {
