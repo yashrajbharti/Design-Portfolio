@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Journey Blog | Design Portfolio</title>
     <link rel="stylesheet" href="../css/journey.css">
+    <link rel="stylesheet" href="../css/modal.css">
     <link rel="shortcut icon" href="../images/Hero/yash.svg" type="image/x-icon">
     <meta name="description" content="Design portfolio showcasing the projects I led as a UX lead">
 </head>
@@ -21,8 +22,102 @@
             upto
             you if you want to believe it</h2>
 
-        <section>
+        <section class="grid">
+            <div class="blog">
+                <div class="date">Oct 2024</div>
+                <div class="content">
+                    <p>The maps offices have so much significance as they are the birthplace of liquid galaxy.</p>
+                    <div class="images">
+                        <img src="../images/Journey/Maps.jpeg" alt="" loading="lazy">
+                        <img src="../images/Journey/Google Cycle.jpeg" alt="" loading="lazy">
+                        <img src="../images/Journey/Google Maps.jpeg" alt="" loading="lazy">
+                        <img src="../images/Journey/Google Main.jpeg" alt="" loading="lazy">
+                    </div>
+                </div>
+            </div>
+            <div class="blog">
+                <div class="date">Oct 2024</div>
+                <div class="content">
+                    <p>I met the Google Program Manager who is running the open source programs for more than a decade!,
+                        Mary Radomile. This was a moment to be invited and give a video shoot at Google. Another
+                        opportunity I will never forget. I also met Sophia who's an Analyst at Google, and so many more
+                        Googlers, Patricia, Kass, Lucy and more were there in this adventure. There was a moment where I
+                        tell Kass, the best lifehack is to be in a room with people who have achieved what you want, and
+                        I want to be a Googler, and she says "Great! and see you are here".. these talks make me
+                        passionate to keep trying!</p>
+                    <div class="images">
+                        <img src="../images/Journey/VideoShoot.jpeg" alt="" loading="lazy">
+                        <img src="../images/Journey/Escorted by Sophia.jpeg" alt="" loading="lazy">
+                        <img src="../images/Journey/Mary Radomile.jpeg" alt="" loading="lazy">
+                    </div>
+                </div>
+            </div>
+            <div class="blog">
+                <div class="date">Oct 2024</div>
+                <div class="content">
+                    <p>The in-person Talks at Google! I was prepared by Nina Weber, former Google Research lead for this
+                        very moment! And I did really well, a lot of claps.</p>
+                    <div class="images">
+                        <img src="../images/Journey/Talks at Google CA.jpeg" alt="" loading="lazy">
+                        <img src="../images/Journey/Talks.jpeg" alt="" loading="lazy">
+                        <img src="../images/Journey/Unconference.jpeg" alt="" loading="lazy">
+                    </div>
+                </div>
+            </div>
+            <div class="blog">
+                <div class="date">Oct 2024</div>
+                <div class="content">
+                    <p>This was another great visit, the Google Store!</p>
+                    <div class="images">
+                        <img src="../images/Journey/Google store.jpeg" alt="" loading="lazy">
+                        <img src="../images/Journey/Store.jpeg" alt="" loading="lazy">
+                    </div>
+                </div>
+            </div>
+            <div class="blog">
+                <div class="date">Oct 2024</div>
+                <div class="content">
+                    <p>Carlos Works at Meta and hence we visited Meta!</p>
+                    <div class="images">
+                        <img src="../images/Journey/Meta.jpeg" alt="" loading="lazy">
+                        <img src="../images/Journey/Carlos Candela.png" alt="" loading="lazy">
 
+                    </div>
+                </div>
+            </div>
+            <div class="blog">
+                <div class="date">Oct 2024</div>
+                <div class="content">
+                    <p>Now liquid galaxy was also ported to NASA back in the day. And we visited a NASA controlled area,
+                        so cool!</p>
+                    <div class="images">
+                        <img src="../images/Journey/Nasa Controlled Area.jpeg" alt="" loading="lazy">
+                        <img src="../images/Journey/Nasa.jpeg" alt="" loading="lazy">
+                    </div>
+                </div>
+            </div>
+            <div class="blog">
+                <div class="date">Oct 2024</div>
+                <div class="content">
+                    <p>I was invited to dinner by Gary Bradski, well me and Admin Andreu. He's the creator of OpenCV and
+                        a big name in the world of technological automation. Now he's sending a rover with his name to
+                        the moon, and andreu has 8 satellites in space. And I was sitting with nothing, maybe I should
+                        either do something about it or stop being hard on myself. I will eventually get there, there is
+                        hope.</p>
+                    <div class="images">
+                        <img src="../images/Journey/Gary.jpeg" alt="" loading="lazy">
+                    </div>
+                </div>
+            </div>
+            <div class="blog">
+                <div class="date">Oct 2024</div>
+                <div class="content">
+                    <p>I was at the smartest place on Earth. In front of the Garage where Apple was born!</p>
+                    <div class="images">
+                        <img src="../images/Journey/Apple.jpeg" alt="" loading="lazy">
+                    </div>
+                </div>
+            </div>
             <div class="blog">
                 <div class="date">Oct 2024</div>
                 <div class="content">
@@ -34,7 +129,6 @@
                     </div>
                 </div>
             </div>
-
             <div class="blog">
                 <div class="date">Sep 2024</div>
                 <div class="content">
@@ -312,6 +406,16 @@
         </div>
         <span>@design portfolio by yash</span>
     </footer>
+    <div id="parent-modal" class="modal">
+        <button class="close" onclick="closeModal()">&times;</button>
+        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+        <div class="counter" id="counter"></div>
+        <div class="modal-content">
+            <img id="modalImg" src="" alt="showcase pokemon infographic">
+        </div>
+        <button class="next" onclick="changeSlide(1)">&#10095;</button>
+    </div>
+    <script src="../js/carousel.js"></script>
 </body>
 
 </html>
