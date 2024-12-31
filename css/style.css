@@ -483,3 +483,11 @@ footer div a:hover {
         }
     }
 }
+
+
+.glance {
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: #242a2f;
+    text-underline-offset: 5px;
+}
