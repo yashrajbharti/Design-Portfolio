@@ -178,6 +178,7 @@ main {
 
 .blog .date {
     position: relative;
+    color: #0e1012;
     font-size: 12px;
     font-weight: 700;
 }
