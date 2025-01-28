@@ -1,0 +1,124 @@
+main {
+    text-align: center;
+    padding: 40px;
+    min-block-size: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    display: block;
+    text-align: center;
+}
+
+main h1 img {
+    display: block;
+    margin-block-end: 10px;
+    margin-inline: auto;
+}
+
+
+.pdf {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    background-color: #e9ecef;
+    max-inline-size: max-content;
+    margin-inline: auto;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.pdf p {
+    color: #3b5ec7;
+}
+
+
+h2.projects {
+    margin-block-start: 20px;
+    margin-block-end: 10px;
+}
+
+.border {
+    border-radius: 16px;
+    border: 4px solid #e2e2e2;
+}
+
+.center {
+    text-align: center;
+    margin-block-start: 10px;
+}
+
+.multiply {
+    mix-blend-mode: multiply;
+}
+
+.img {
+    display: block;
+    text-align: center;
+    max-inline-size: 600px;
+    inline-size: 100%;
+    margin-inline: auto;
+}
+
+.img.small {
+    max-inline-size: 300px;
+}
+
+.img.extra-small {
+    max-inline-size: 200px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    inline-size: 90%;
+    margin-inline: auto;
+}
+
+.grid img {
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+section p,
+section ul {
+    max-inline-size: 800px;
+    margin-inline: auto;
+}
+
+section>img {
+    display: block;
+    max-inline-size: 800px;
+    inline-size: 100%;
+    margin-inline: auto;
+    text-align: center;
+    mix-blend-mode: multiply;
+}
+
+.content {
+    inline-size: 100%;
+    max-inline-size: 700px;
+    margin-inline: auto;
+    padding: 50px;
+    padding-block-start: 25px;
+    background-color: #e9ecef;
+    border-radius: 20px;
+}
+
+.grid .border {
+    border-radius: 24px;
+}
+
+ul li:not(:last-child) {
+    margin-block-end: 5px;
+}
+
+button.button {
+    cursor: pointer;
+}

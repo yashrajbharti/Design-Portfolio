@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chrome AI | Design Portfolio</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/chromeai.css">
+    <link rel="shortcut icon" href="../images/Hero/yash.svg" type="image/x-icon">
+    <meta name="description" content="Design portfolio showcasing the projects I led as a UX lead">
+</head>
+
+<body class="geologica">
+    <header>
+        <a href="#main" class="skip">Skip to main content</a>
+    </header>
+    <main>
+        <a href="/Design-Portfolio"><img class="logo" src="../images/Hero/yash.svg" alt="yash logo" width="65px"></a>
+        <h1>
+            <img src="../images/Chrome/Chrome.png" alt="Chrome logo" height="100px" width="auto">
+            <span class="brand">Chrome AI</span>: Built-in Captions on the fly
+        </h1>
+    </main>
+    <section>
+        <h2 id="main" class="projects">- brief -</h2>
+        <p>Only 0.5% of web videos include a &lt;track&gt; tag (source: The Web Almanac by HTTP Archive 2024 Report),
+            leaving a majority of online video content inaccessible for individuals who rely on captions. This project
+            proposes a built-in UI option in video elements that enables browsers to auto-generate captions dynamically
+            when a &lt;track&gt; element is missing. This solution aims to improve web accessibility without requiring
+            explicit authoring changes.
+        </p>
+        <h2 class="projects">- context and my role -</h2>
+        <p>I started on ways to explore with a focus on UX and performance, how to make web captions available on the
+            client side, directly through JS. Later when the Web Almanac report gave a logical reason to continue on
+            this. I used client side AI, with hugging face and transformers JS, worked in writing the code and
+            explainer,
+            and acted as an independent
+            contributor helping various vendors with auto-caption on the web. Chrome built-in gemini nano is working in
+            a similar field, to bring multi-modalities to Chrome with a powerful client side AI, which is how I
+            connected with Kenji, Dirk, Adam and Thomas from Google and got supported and helped with my explainer.</p>
+        <h2 class="projects">- problem statement -</h2>
+        <p>Only 0.5% of all web videos have captions, and many companies due to timeline and budget restrictions, leave
+            out on adding captions on their videos. The aim of auto-captions is to solve this problem for document
+            authors and help end users specially people with auditory special needs, who rely on captions.
+            <br><br>
+            <img loading="lazy" class="img" src="../images/Chrome/Web Almanac.png" alt="Web Almanac by HTTP Archive">
+            <br>
+        </p>
+        <h2 class="projects glance">- quick glance for hiring managers -</h2>
+        <p>
+            Worked on Auto-captions transcribing videos with a client side AI using Hugging Face Whisper models, and
+            worked on writing explainers and Chrome extension to strengthen the work.
+            <br><br>
+        </p>
+        <ul>
+            <li><b>Stakeholder Feedback:</b> Important feedbacks from Google and W3C were reflected on both my code and
+                explainer. I also tested the captions by visiting my mother's special needs school to see how the
+                implementation helps people with special needs.
+            </li>
+            <li><b>Mike Smith (W3C):</b> An important feedback on my work was by W3C Japan staff, Mike. They talked how
+                its important to make auto-captions as a User Agent's responsibility when the &lt;track&gt; element is
+                missing.</li>
+            <li><b>Googlers:</b> Some of the important ideas such as how we can use Google's Gemini nano built-in Chrome
+                in place of
+                Whisper and the performance constraints that may happen resulted in my better understanding of Web APIs;
+                I documented it and a
+                code solution was added to the explainer.</li>
+        </ul>
+
+        </p>
+        <h2 class="projects">- slides -</h2>
+        <p>I have supplied the slides as a proof of the feedbacks received. I previously used the same slides in a
+            Wednesday Web AI Chrome Meetup with Kenji Baheux from Google Chrome and got supported in ways he is in favor
+            of bringing such multi-modalities to Chrome.</p>
+        <br>
+        <img loading="lazy" class="img" src="../images/Chrome/Captions.png" alt="Captions Presentation">
+        <br>
+        <a class="pdf" href="../images/Chrome/Using Google Chrome's Gemini Nano for STT .pdf" target="_blank">
+            <img src="../images/Icons/Pdf.svg" alt="Pdf for Chrome captions" height="40px">
+            <p>Using Google Chrome's Gemini Nano for STT</p>
+        </a>
+        <br>
+        <h2 class="projects">- explainer -</h2>
+        <p>The explainer proposed the need for having Web captions auto-enabled, for helping businesses and content
+            creators with captions that they can start with. It also proposed how the code for auto-captions Web
+            Transcriber API will look like, based on existing Chrome AI APIs such as Prompt, Write, Rewrite and Language
+            Translation APIs. The estimated usage will be in billions and can help businesses save millions through
+            built-in AI solutions.</p>
+        <br>
+        <a href="https://github.com/yashrajbharti/auto-generate-captions-video" class="button" target="_blank">Auto
+            Captions Explainer ↗</a>
+        <br>
+        <h2 class="projects">- research -</h2>
+        <ul>
+            <li><b>Modes of Captions:</b> Three modes of captions UI were tested on users. A scroll mode, an append mode
+                and static/ default mode which either show the current timestamp of the video in words through
+                scrolling, appending new words, or entirely replacing respectively.</li>
+            <li><b>Accessibility Tests:</b> I ran tests with non-native english speakers, Hindi and Spanish Speakers and
+                People with hearing impairments to understand better if the hypotheses to summarize longer words is
+                needed.</li>
+        </ul>
+        <br>
+        <a class="pdf" href="../images/Chrome/WCAG SC Auto Captions.pdf" target="_blank">
+            <img src="../images/Icons/Pdf.svg" alt="WCAG Success Criteria Report for Auto Captions" height="40px">
+            <p>Accessibility Conformance Report WCAG SC</p>
+        </a>
+        <br>
+        <h2 class="projects">- chrome extension -</h2>
+        <p>"Extensions are a great way to explore how something like this would work in practice."
+            <br><i>-
+                Thomas Steiner, Google Chrome</i>
+        </p>
+        <br>
+        <a href="https://github.com/yashrajbharti/captions-on-the-fly" class="button" target="_blank">Chrome Extension
+            ↗</a>
+        <br>
+        <h2 class="projects">- brainstorm and iteration -</h2>
+        <ul>
+            <li><b>Early Start:</b> I started on this far too early, that helped me showcase it at the right time with a
+                lot of brainstorming already made.
+            </li>
+            <li><b>Ways that didn't work:</b> Multiple failures occurred when I tried making auto captions using Flask/
+                python and whisper with slower performance and need of server side code, node-whisper - which also
+                needed server side work, Deepgram - again a server side implementation failing to achieve the goal.</li>
+            <li><b>Web Almanac report:</b> Six months later the 0.5% of all videos on web having captions gave me a
+                radical reason to believe in myself and again go for it.
+            </li>
+            <li><b>HuggingFace:</b> This time I pulled up all the ways that didn't
+                work, and then explored client side solutions. The current Gemini nano still lacks speech to text, thus
+                Whisper from Hugging Face that required a worker script and transformers JS proves to do it all on the
+                web. The prototype was ready, and I began to create an explainer which gained support in almost no time.
+            </li>
+        </ul>
+        <a href="https://github.com/yashrajbharti/audio-captions" class="button" target="_blank">Trial and Errors ↗</a>
+
+        <h2 class="projects">- live prototype -</h2>
+        <p>The vanilla based solution allows one to upload and see captions in real-time. For the first time, AI model
+            loading causes a ~40sec delay, and I am working on another Chrome ideated Web API solution to fix this
+            problem.</p>
+        <br>
+        <img loading="lazy" class="img" src="../images/Chrome/Transcriber.png" alt="Captions Live Demo">
+        <br>
+        <a href="https://yashrajbharti.github.io/captions-on-the-fly/src/example2.html" class="button"
+            target="_blank">Launch Demo ↗</a>
+        <br>
+        <h2 class="projects">- conclusion -</h2>
+        <ul>
+            <li><b>The Chrome way:</b> Multi-modalities was always planned by Google Chrome and I acted as a catalyst
+                showing passion and help to support its work. I previously helped in Project Fugu and thus I had an idea
+                of the processes involved in making these Web AI APIs available to vendors. The work is at initial
+                stages but I am surely by the end of 2025 it will be in the Early Preview Program (EPP).</li>
+            <li><b>Cross Origin Storage:</b> This work requires an AI model to be loaded to Chrome which takes time.
+                This is where Cross origin storage, an API with its explainer authored by Thomas Steiner and Francis
+                Beaufort, from Chrome, comes into play. This will potentially solve any such multiple downloads and
+                redundancy in storage and give rise to a sustainable solution. I am also helping with COS, and have
+                given shape to its explainer with User Transient activation, handling multiple storages, wireframes and
+                more.</li>
+        </ul>
+        <a href="https://github.com/tomayac/cross-origin-storage" class="button" target="_blank">COS API ↗</a>
+        <h2 class="projects">- scope of improvements -</h2>
+        <p>There are yet two schools of thoughts in the explainer. One is the API helping document authors with captions
+            to start with and they can be edited. Second is the direct use of captions when there is no &lt;track&gt;
+            element. The latter might cause people to not manually edit captions even more, which can be bad. Yet this
+            feature is needed in cases where we have a live video stream. Although this is answered in the explainer,
+            more careful considerations could be provided while using the API.
+        </p>
+        <h2 class="projects">- future work EPP -</h2>
+        <p>Google Chrome will launch the APIs for testing and expression of support through the early preview program. I
+            hope to keep engaged and help with this and related APIs till this happens, to make this happen.</p>
+    </section>
+    <footer>
+        <div>
+            <a href="https://github.com/yashrajbharti" target="_blank">
+                <img src="../images/Social/github.svg" alt="" height="16px">
+                Github
+            </a>
+            <a href="https://www.linkedin.com/in/yash-raj-bharti-5693b6183/" target="_blank">
+                <img src="../images/Social/linkedin.svg" alt="" height="16px">
+                LinkedIn
+            </a>
+            <a href="https://yashrajbharti.github.io/portfolio/" target="_blank">
+                <img src="../images/Social/dev.svg" alt="" height="16px">
+                Dev Portfolio
+            </a>
+            <a href="mailto:yashrajbharti.met18@itbhu.ac.in" target="_blank">
+                <img src="../images/Social/email.svg" alt="" height="16px">
+                Email
+            </a>
+        </div>
+        <span>@design portfolio by yash</span>
+    </footer>
+    <script src="../js/carousel.js"></script>
+</body>
+
+</html>

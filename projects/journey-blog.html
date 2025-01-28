@@ -918,7 +918,23 @@
             </div>
         </section>
     </main>
-
+    <div id="parent-modal" class="modal">
+        <button class="close" onclick="closeModal()">&times;</button>
+        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+        <div class="counter" id="counter"></div>
+        <div class="modal-content">
+            <img id="modalImg" src="" alt="showcase pokemon infographic">
+        </div>
+        <button class="next" onclick="changeSlide(1)">&#10095;</button>
+    </div>
+    <script src="../js/carousel.js"></script>
+    <script>
+        document.querySelectorAll('a.date').forEach((anchor, index, anchors) => {
+            const descendingIndex = anchors.length - 1 - index;
+            anchor.id = anchor.textContent.replace(" ", "") + "-" + descendingIndex;
+            anchor.href = "#" + anchor.id;
+        });
+    </script>
     <footer>
         <div>
             <a href="https://github.com/yashrajbharti" target="_blank">
@@ -940,23 +956,6 @@
         </div>
         <span>@design portfolio by yash</span>
     </footer>
-    <div id="parent-modal" class="modal">
-        <button class="close" onclick="closeModal()">&times;</button>
-        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
-        <div class="counter" id="counter"></div>
-        <div class="modal-content">
-            <img id="modalImg" src="" alt="showcase pokemon infographic">
-        </div>
-        <button class="next" onclick="changeSlide(1)">&#10095;</button>
-    </div>
-    <script src="../js/carousel.js"></script>
-    <script>
-        document.querySelectorAll('a.date').forEach((anchor, index, anchors) => {
-            const descendingIndex = anchors.length - 1 - index;
-            anchor.id = anchor.textContent.replace(" ", "") + "-" + descendingIndex;
-            anchor.href = "#" + anchor.id;
-        });
-    </script>
 </body>
 
 </html>

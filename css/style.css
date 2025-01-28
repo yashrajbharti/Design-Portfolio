@@ -235,6 +235,8 @@ h2.projects {
 .github,
 .prototyping,
 .usability-testing,
+.bleeding-edge,
+.api,
 .user-research,
 .ui-ux,
 .maps,
@@ -311,6 +313,14 @@ h2.projects {
 
 .usability-testing {
     background-color: #6699FF25;
+}
+
+.bleeding-edge {
+    background-color: #ff666625;
+}
+
+.api {
+    background-color: #66a8ff25;
 }
 
 .accessibility {
